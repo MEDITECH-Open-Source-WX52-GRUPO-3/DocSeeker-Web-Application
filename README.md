@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FrontEnd
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
@@ -25,3 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# DocSeeker-Web-Application
+>>>>>>> 298d55950c63e2fdf7cddda79e863a532f3bb399
