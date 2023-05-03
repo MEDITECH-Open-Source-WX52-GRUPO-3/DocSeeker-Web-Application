@@ -11,3 +11,4 @@ export class DoctorCardComponent {
   @Input() area = "Area of Doctor";
   @Input() price = "Price of each appointment";
 }
+
