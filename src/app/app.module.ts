@@ -28,6 +28,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {FormsModule} from "@angular/forms";
 import { DashboardComponent } from './views/patients/dashboard/dashboard.component';
 import { ListDoctorsComponent } from './views/patients/list-doctors/list-doctors.component';
+import { DoctorProfileComponent } from './views/patients/doctor-profile/doctor-profile.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ListDoctorsComponent } from './views/patients/list-doctors/list-doctors
     ProfileButtonComponent,
     DashButtonComponent,
     DashboardComponent,
-    ListDoctorsComponent
+    ListDoctorsComponent,
+    DoctorProfileComponent
   ],
   imports: [
     BrowserModule,
