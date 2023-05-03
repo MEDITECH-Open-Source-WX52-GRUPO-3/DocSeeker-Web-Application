@@ -8,6 +8,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { LogInComponent } from './views/patients/log-in/log-in.component';
+import { DoctorCardComponent } from './components/doctor-card/doctor-card.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import {MatListModule} from "@angular/material/list";
@@ -29,6 +30,7 @@ import {MatButtonModule} from "@angular/material/button";
     HomeComponent,
     ToolbarComponent,
     LogInComponent,
+    DoctorCardComponent,
     ReviewComponent,
     SidebarComponent,
     LogInCardComponent
