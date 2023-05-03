@@ -8,13 +8,15 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { LogInComponent } from './views/patients/log-in/log-in.component';
+import { DoctorCardComponent } from './components/doctor-card/doctor-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ToolbarComponent,
-    LogInComponent
+    LogInComponent,
+    DoctorCardComponent
   ],
     imports: [
         BrowserModule,
