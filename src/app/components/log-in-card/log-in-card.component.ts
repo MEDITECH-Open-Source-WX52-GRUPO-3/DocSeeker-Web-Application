@@ -1,8 +1,13 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Patient} from "../../interfaces/patient";
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {LogInService} from "../../services/log-in.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {map, Observable, shareReplay} from "rxjs";
+import {BreakpointObserver, Breakpoints} from "@angular/cdk/layout";
+import {SourcesService} from "../../services/sources.service";
+import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -11,12 +16,20 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
   styleUrls: ['./log-in-card.component.css'],
   providers: [MatSnackBar]
 })
-export class LogInCardComponent {
+
+export class LogInCardComponent implements OnInit{
+  //CONNECTING TO FAKEAPI
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+    .pipe(
+      map(result => result.matches),
+      shareReplay()
+    );
+
   rpassword: string='';
   patient: Patient ={ dni: '', password:''};
-  patients: Patient[]=[];
+  patients: Array<any> = [];
   signInForm: FormGroup;
-  constructor(private snackBar:MatSnackBar, private loginService:LogInService, public builder:FormBuilder) {
+  constructor(private breakpointObserver: BreakpointObserver, private newsSource: SourcesService, private snackBar:MatSnackBar, private loginService:LogInService, public builder:FormBuilder, private router: Router) {
     this.signInForm = this.builder.group({
       dni: ['',[Validators.required, Validators.minLength(8)]],
       password: ['', [Validators.required, Validators.minLength(8)]]
@@ -43,17 +56,24 @@ export class LogInCardComponent {
   }
 
   login(){
-    const userFound = this.loginService.getPatient(this.patient.dni, this.patient.password);
-    if (userFound){
+    //IF USER IS FOUND
+    const patientFound = this.patients.find(patient => patient.dni== this.patient.dni && patient.password == this.patient.password)
+    if(patientFound){
       this.snackBar.open('Login Succesfull','',{duration:1000})
-    }else {
+      console.log(patientFound)
+      localStorage.setItem('currentPatient', JSON.stringify(patientFound));
+      this.router.navigate(['/dashboard'])
+    }
+    else{
       this.snackBar.open('Login Failed','',{duration:1000})
     }
   }
 
-  show(){
-    console.log("Users: ");
-    this.patients = this.loginService.showPatient();
-    console.log(this.patients)
+  ngOnInit() {
+    this.newsSource.getSources('patients').subscribe((data: any): void => {
+      this.patients = data;
+      console.log("Sources: ", this.patients);
+    });
+
   }
 }

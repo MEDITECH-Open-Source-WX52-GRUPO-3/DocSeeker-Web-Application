@@ -100,7 +100,7 @@
     {
       "id": 0,
       "name": "Martin Vizcarra",
-      "DNI": "6723518",
+      "dni": "6723518",
       "genre": "Male",
       "birthday": "27/12/1999",
       "email": "correo@gmail.com",
@@ -112,7 +112,7 @@
     {
       "id": 1,
       "name": "Luis Sanchez Gomez",
-      "DNI": "125536",
+      "dni": "125536",
       "genre": "Male",
       "birthday": "07/02/1959",
       "email": "correo1@gmail.com",
@@ -124,7 +124,7 @@
     {
       "id": 2,
       "name": "Nancy Cirila",
-      "DNI": "6723518",
+      "dni": "6723518",
       "genre": "Female",
       "birthday": "20/11/1967",
       "email": "email@gmail.com",
@@ -136,7 +136,7 @@
     {
       "id": 3,
       "name": "Martha Mirones",
-      "DNI": "09182353",
+      "dni": "09182353",
       "genre": "Female",
       "birthday": "12/12/1912",
       "email": "gmail@gmail.com",
@@ -148,7 +148,7 @@
     {
       "id": 4,
       "name": "Mike García",
-      "DNI": "67223488",
+      "dni": "67223488",
       "genre": "Male",
       "birthday": "31/05/2000",
       "email": "mail@gmail.com",
@@ -159,7 +159,7 @@
     },
     {
       "id": 5,
-      "DNI": "74717985",
+      "dni": "74717985",
       "name": "Edgar Alexander Malca  Rojas",
       "genre": {
         "name": "Male",
@@ -174,7 +174,7 @@
     },
     {
       "id": 6,
-      "DNI": "70658893",
+      "dni": "70658893",
       "name": "Luis Pineda Ugas",
       "genre": {
         "name": "Male",
@@ -344,7 +344,7 @@
   "doctors": [
     {
       "id": 0,
-      "DNI": "9873641",
+      "dni": "9873641",
       "password": "doctorbest",
       "name": "Jose Miguel",
       "area": "Dentist",
@@ -394,7 +394,7 @@
     },
     {
       "id": 1,
-      "DNI": "736529",
+      "dni": "736529",
       "password": "newdoctor291",
       "name": "Nancy Monica",
       "area": "Pediatrician",
@@ -429,7 +429,7 @@
     },
     {
       "id": 2,
-      "DNI": "3746167",
+      "dni": "3746167",
       "password": "luijo847",
       "name": "Jose Luis",
       "area": "Dentist",
@@ -480,7 +480,7 @@
     },
     {
       "id": 3,
-      "DNI": "324561",
+      "dni": "324561",
       "password": "miguelitodoctor",
       "name": "Miguel Luis",
       "area": "Psychologist",
@@ -520,7 +520,7 @@
     },
     {
       "id": 4,
-      "DNI": "789372",
+      "dni": "789372",
       "password": "curibaloncesto",
       "name": "Jonatan Mondragon",
       "area": "Plastic Surgeon",

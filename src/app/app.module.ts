@@ -26,7 +26,7 @@ import {MatTabsModule} from "@angular/material/tabs";
 import {MatInputModule} from "@angular/material/input";
 import {MatIconModule} from "@angular/material/icon";
 import {FormsModule} from "@angular/forms";
-import {MatButtonModule} from "@angular/material/button";
+import { DashboardComponent } from './views/patients/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +39,8 @@ import {MatButtonModule} from "@angular/material/button";
     SidebarComponent,
     LogInCardComponent,
     ProfileButtonComponent,
-    DashButtonComponent
+    DashButtonComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
