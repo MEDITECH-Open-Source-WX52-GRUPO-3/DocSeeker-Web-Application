@@ -8,6 +8,10 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { LogInComponent } from './views/patients/log-in/log-in.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import {MatListModule} from "@angular/material/list";
+import {MatSidenavModule} from "@angular/material/sidenav";
 import { ReviewComponent } from './components/review/review.component';
 import {SourcesService} from "./services/sources.service";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
@@ -25,7 +29,8 @@ import {MatButtonModule} from "@angular/material/button";
     HomeComponent,
     ToolbarComponent,
     LogInComponent,
-    ReviewComponent
+    ReviewComponent,
+    SidebarComponent,
     LogInCardComponent
   ],
   imports: [
@@ -36,10 +41,13 @@ import {MatButtonModule} from "@angular/material/button";
     MatCardModule,
     MatTabsModule,
     MatInputModule,
+    MatFormFieldModule,
     MatIconModule,
     FormsModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatListModule,
+    MatSidenavModule
   ],
   providers: [SourcesService],
   bootstrap: [AppComponent]
