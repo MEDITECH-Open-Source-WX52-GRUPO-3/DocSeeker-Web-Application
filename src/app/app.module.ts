@@ -8,6 +8,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { LogInComponent } from './views/patients/log-in/log-in.component';
+import { ReviewComponent } from './components/review/review.component';
 import {SourcesService} from "./services/sources.service";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {LogInCardComponent} from "./components/log-in-card/log-in-card.component";
@@ -24,6 +25,7 @@ import {MatButtonModule} from "@angular/material/button";
     HomeComponent,
     ToolbarComponent,
     LogInComponent,
+    ReviewComponent
     LogInCardComponent
   ],
   imports: [
