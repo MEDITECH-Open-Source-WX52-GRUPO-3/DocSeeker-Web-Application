@@ -30,6 +30,7 @@ import { DashboardComponent } from './views/patients/dashboard/dashboard.compone
 import { ListDoctorsComponent } from './views/patients/list-doctors/list-doctors.component';
 import { DoctorProfileComponent } from './views/patients/doctor-profile/doctor-profile.component';
 import { DoctorReviewsComponent } from './views/patients/doctor-reviews/doctor-reviews.component';
+import { NewReviewToDoctorComponent } from './views/patients/new-review-to-doctor/new-review-to-doctor.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { DoctorReviewsComponent } from './views/patients/doctor-reviews/doctor-r
     DashboardComponent,
     ListDoctorsComponent,
     DoctorProfileComponent,
-    DoctorReviewsComponent
+    DoctorReviewsComponent,
+    NewReviewToDoctorComponent
   ],
   imports: [
     BrowserModule,
