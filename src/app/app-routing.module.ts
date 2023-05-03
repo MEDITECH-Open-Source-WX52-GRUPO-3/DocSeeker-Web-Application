@@ -5,6 +5,7 @@ import {LogInComponent} from "./views/patients/log-in/log-in.component";
 import {DashboardComponent} from "./views/patients/dashboard/dashboard.component";
 import {ListDoctorsComponent} from "./views/patients/list-doctors/list-doctors.component";
 import {DoctorProfileComponent} from "./views/patients/doctor-profile/doctor-profile.component";
+import {DoctorReviewsComponent} from "./views/patients/doctor-reviews/doctor-reviews.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'listDoctors', component: ListDoctorsComponent },
   { path: 'doctor/:id', component: DoctorProfileComponent },
-  { path: 'reviewsDoctor/:id', component: HomeComponent }
+  { path: 'reviewsDoctor/:id', component: DoctorReviewsComponent }
 
 ];
 
