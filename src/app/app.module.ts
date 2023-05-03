@@ -8,17 +8,20 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { LogInComponent } from './views/patients/log-in/log-in.component';
-import { LogInCardComponent } from './components/log-in-card/log-in-card.component';
-import {MatCardModule} from "@angular/material/card";
-import {MatTabsModule} from "@angular/material/tabs";
 import {MatFormFieldModule} from "@angular/material/form-field";
-import {MatIconModule} from "@angular/material/icon";
-import {FormsModule} from "@angular/forms";
-import {MatButtonModule} from "@angular/material/button";
-import {MatInputModule} from "@angular/material/input";
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import {MatListModule} from "@angular/material/list";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import { ReviewComponent } from './components/review/review.component';
+import {SourcesService} from "./services/sources.service";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {LogInCardComponent} from "./components/log-in-card/log-in-card.component";
+import {MatCardModule} from "@angular/material/card";
+import {MatTabsModule} from "@angular/material/tabs";
+import {MatInputModule} from "@angular/material/input";
+import {MatIconModule} from "@angular/material/icon";
+import {FormsModule} from "@angular/forms";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -26,8 +29,9 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     HomeComponent,
     ToolbarComponent,
     LogInComponent,
-    LogInCardComponent,
-    SidebarComponent
+    ReviewComponent,
+    SidebarComponent,
+    LogInCardComponent
   ],
   imports: [
     BrowserModule,
@@ -36,15 +40,16 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     MatToolbarModule,
     MatCardModule,
     MatTabsModule,
+    MatInputModule,
     MatFormFieldModule,
     MatIconModule,
     FormsModule,
     MatButtonModule,
-    MatInputModule,
+    HttpClientModule,
     MatListModule,
     MatSidenavModule
   ],
-  providers: [],
+  providers: [SourcesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
