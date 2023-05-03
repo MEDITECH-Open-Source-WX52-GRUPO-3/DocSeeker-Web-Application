@@ -8,6 +8,8 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { LogInComponent } from './views/patients/log-in/log-in.component';
+import {SourcesService} from "./services/sources.service";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -20,9 +22,10 @@ import { LogInComponent } from './views/patients/log-in/log-in.component';
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        MatToolbarModule
+        MatToolbarModule,
+        HttpClientModule
     ],
-  providers: [],
+  providers: [SourcesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
