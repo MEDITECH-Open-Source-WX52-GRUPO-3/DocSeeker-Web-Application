@@ -8,6 +8,9 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { LogInComponent } from './views/patients/log-in/log-in.component';
+import { ProfileButtonComponent } from './components/profile-button/profile-button.component';
+import {MatButtonModule} from "@angular/material/button";
+import {NgOptimizedImage} from "@angular/common";
 import { DoctorCardComponent } from './components/doctor-card/doctor-card.component';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -33,7 +36,8 @@ import {MatButtonModule} from "@angular/material/button";
     DoctorCardComponent,
     ReviewComponent,
     SidebarComponent,
-    LogInCardComponent
+    LogInCardComponent,
+    ProfileButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +53,8 @@ import {MatButtonModule} from "@angular/material/button";
     MatButtonModule,
     HttpClientModule,
     MatListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    NgOptimizedImage
   ],
   providers: [SourcesService],
   bootstrap: [AppComponent]
