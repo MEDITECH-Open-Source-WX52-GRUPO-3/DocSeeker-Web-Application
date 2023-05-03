@@ -8,6 +8,8 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { LogInComponent } from './views/patients/log-in/log-in.component';
+import {SourcesService} from "./services/sources.service";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {LogInCardComponent} from "./components/log-in-card/log-in-card.component";
 import {MatCardModule} from "@angular/material/card";
 import {MatTabsModule} from "@angular/material/tabs";
@@ -34,9 +36,10 @@ import {MatButtonModule} from "@angular/material/button";
     MatInputModule,
     MatIconModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SourcesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
