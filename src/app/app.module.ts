@@ -8,6 +8,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { LogInComponent } from './views/patients/log-in/log-in.component';
+import { DashButtonComponent } from './components/dash-button/dash-button.component';
 import { ProfileButtonComponent } from './components/profile-button/profile-button.component';
 import {MatButtonModule} from "@angular/material/button";
 import {NgOptimizedImage} from "@angular/common";
@@ -37,7 +38,8 @@ import {MatButtonModule} from "@angular/material/button";
     ReviewComponent,
     SidebarComponent,
     LogInCardComponent,
-    ProfileButtonComponent
+    ProfileButtonComponent,
+    DashButtonComponent
   ],
   imports: [
     BrowserModule,
