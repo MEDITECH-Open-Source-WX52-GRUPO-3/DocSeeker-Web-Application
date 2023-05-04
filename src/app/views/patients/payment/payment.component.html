@@ -1,0 +1,42 @@
+<mat-drawer-container>
+  <mat-drawer mode="side" opened="true">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div class="payment-form-container">
+      <div class="left-column">
+        <h1>< Make the payment</h1>
+        <p>Your payment details</p>
+        <div class="form-field">
+          <label for="cardholder">Cardholder</label>
+          <input type="text" id="cardholder" name="cardholder">
+        </div>
+        <div class="form-field">
+          <label for="card-number">Card number</label>
+          <input type="text" id="card-number" name="card-number">
+        </div>
+        <div class="form-field">
+          <label for="expiration-date">Expiration date</label>
+          <input type="text" id="expiration-date" name="expiration-date">
+        </div>
+        <div class="form-field">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" name="cvv">
+        </div>
+        <p>Total amount: ${{ totalAmount }}</p>
+
+        <button mat-button>See details</button>
+        <div class="form-field">
+          <mat-checkbox>Save card details for future purchases</mat-checkbox>
+        </div>
+      </div>
+      <div class="right-column">
+        <img src="assets/images/logo_visa.png" alt="imagen-de-pago" width="500" height="500">
+        <app-popup></app-popup>
+      </div>
+
+    </div>
+  </mat-drawer-content>
+
+</mat-drawer-container>

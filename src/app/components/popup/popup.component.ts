@@ -5,8 +5,8 @@ import { Component, EventEmitter, Output, Input} from '@angular/core';
   styleUrls: ['./popup.component.css']
 })
 export class PopupComponent {
-  imageSrc = 'assets/images/checkImage.png';
-  popupText = 'Done';
+  @Input() imageSrc = 'assets/images/checkImage.png';
+  @Input() popupText = 'Done';
   closeButtonImg = 'assets/images/closeButton.png';
   popupVisible = false;
   @Output() close = new EventEmitter<void>();

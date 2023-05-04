@@ -1,14 +1,14 @@
 .go-payment-container {
   display: flex;
   align-items: center;
-  height: 100px;
-  width: 400px;
+  height: 200px;
+  width: 600px;
   background-color: #8dbfc7;
   border: 1px solid black;
 }
 
 .first_box {
-  width: 100px;
+  width: 200px;
   height: 100%;
   background-color: #a0dee8;
   display: flex;
@@ -24,11 +24,11 @@
   top: 25%; /* Ajustar la posición vertical */
   left: 50%;
   transform: translateX(-50%);
-  font-size: 16px;
+  font-size: 30px;
 }
 
 .time-text {
-  font-size: 16px;
+  font-size: 30px;
   position:absolute;
   left: 50%;
   transform: translate(-50%, 50%);
@@ -50,22 +50,22 @@
 }
 
 .dr-name {
-  font-size: 16px;
-  margin-bottom: 10px;
-  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 25px;
+
   color:white;
 }
 
 .disease {
-  font-size: 14px;
-  margin-bottom: 10px;
-  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 25px;
+
   color:white;
 }
 
 .payment {
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 25px;
+
   color:white;
 }
 
@@ -80,6 +80,6 @@ button {
   background-color: transparent;
   border: none;
   text-decoration: underline;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {GoPaymentComponent} from "./components/go-payment/go-payment.component";
+import {PopupComponent} from "./components/popup/popup.component";
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './views/home/home.component';
@@ -31,6 +32,9 @@ import { ListDoctorsComponent } from './views/patients/list-doctors/list-doctors
 import { DoctorProfileComponent } from './views/patients/doctor-profile/doctor-profile.component';
 import { DoctorReviewsComponent } from './views/patients/doctor-reviews/doctor-reviews.component';
 import { NewReviewToDoctorComponent } from './views/patients/new-review-to-doctor/new-review-to-doctor.component';
+import { DoctorDateComponent } from './views/patients/doctor-date/doctor-date.component';
+import { PaymentComponent } from './views/patients/payment/payment.component';
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
@@ -48,25 +52,30 @@ import { NewReviewToDoctorComponent } from './views/patients/new-review-to-docto
     ListDoctorsComponent,
     DoctorProfileComponent,
     DoctorReviewsComponent,
-    NewReviewToDoctorComponent
+    NewReviewToDoctorComponent,
+    GoPaymentComponent,
+    PopupComponent,
+    DoctorDateComponent,
+    PaymentComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatTabsModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatIconModule,
-    FormsModule,
-    MatButtonModule,
-    HttpClientModule,
-    MatListModule,
-    MatSidenavModule,
-    NgOptimizedImage
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatCardModule,
+        MatTabsModule,
+        MatInputModule,
+        MatFormFieldModule,
+        MatIconModule,
+        FormsModule,
+        MatButtonModule,
+        HttpClientModule,
+        MatListModule,
+        MatSidenavModule,
+        NgOptimizedImage,
+        MatCheckboxModule
+    ],
   providers: [SourcesService],
   bootstrap: [AppComponent]
 })
