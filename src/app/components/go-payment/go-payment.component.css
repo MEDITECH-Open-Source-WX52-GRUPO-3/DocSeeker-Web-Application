@@ -1,0 +1,85 @@
+.go-payment-container {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  width: 600px;
+  background-color: #8dbfc7;
+  border: 1px solid black;
+}
+
+.first_box {
+  width: 200px;
+  height: 100%;
+  background-color: #a0dee8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.date-text {
+  position: absolute;
+  top: 25%; /* Ajustar la posición vertical */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+}
+
+.time-text {
+  font-size: 30px;
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.second_box {
+  flex: 1;
+  height: 100%;
+  display: flex;
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.dr-name {
+  font-size: 25px;
+  margin-bottom: 25px;
+
+  color:white;
+}
+
+.disease {
+  font-size: 25px;
+  margin-bottom: 25px;
+
+  color:white;
+}
+
+.payment {
+  font-size: 25px;
+
+  color:white;
+}
+
+.right-column {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  font-size: 15px;
+  cursor: pointer;
+}
