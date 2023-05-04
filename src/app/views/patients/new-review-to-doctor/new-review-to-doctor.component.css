@@ -26,6 +26,7 @@ mat-drawer-container{
 }
 
 .title-container{
+  margin-right: 3%;
   display: flex;
   align-self: center;
 }
@@ -40,34 +41,38 @@ mat-drawer-container{
 
 .return-button{
   font-weight: bold;
-  font-size: 20px;
 }
 
 h1{
+  margin-left: 5%;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .doctorName{
-  font-size: 23px;
+  font-size: 28px;
   font-weight: lighter;
 }
 
 .speciality{
+  margin-top: 2%;
+  font-size: 25px;
   font-weight: bold;
   border-bottom: 1px solid black;
 }
 
 .stars{
+  font-weight: bold;
+  font-size: 25px;
   border-bottom: 1px solid black;
 }
 
 .description{
+  font-size: 25px;
   border-bottom: 1px solid black;
 }
 
 .review-field{
-  background-color: white;
   width: 100%;
 }
 igc-rating {
@@ -78,4 +83,17 @@ igc-rating {
 
 igc-rating::part(symbols) {
   gap: 30px;
+}
+
+.publish-container {
+  margin-left: 45%;
+  color: white;
+}
+
+.publish-button{
+  color: white !important;
+  font-weight: lighter;
+  background-color: #0093AB;
+  width: 190%;
+  height: 200%;
 }

@@ -6,7 +6,7 @@
   <mat-drawer-content>
     <div class="wrapper">
       <div class="title-container">
-        <button mat-button class="return-button">
+        <button mat-fab class="return-button" color="basic">
           <mat-icon>arrow_back</mat-icon>
         </button>
         <h1>New Review</h1>
@@ -21,9 +21,12 @@
           <mat-form-field class="review-field">
             <input matInput placeholder="Enter your review here" [(ngModel)]="review">
           </mat-form-field>
-
         </div>
       </div>
+      <div class="publish-container">
+        <button mat-button class="publish-button">Publish</button>
+      </div>
+
     </div>
   </mat-drawer-content>
 
