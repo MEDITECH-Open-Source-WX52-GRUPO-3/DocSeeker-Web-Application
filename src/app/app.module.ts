@@ -31,6 +31,8 @@ import { ListDoctorsComponent } from './views/patients/list-doctors/list-doctors
 import { DoctorProfileComponent } from './views/patients/doctor-profile/doctor-profile.component';
 import { DoctorReviewsComponent } from './views/patients/doctor-reviews/doctor-reviews.component';
 import { NewReviewToDoctorComponent } from './views/patients/new-review-to-doctor/new-review-to-doctor.component';
+import { NewCardComponent } from './components/new-card/new-card.component';
+import { ListNewsComponent } from './view/patients/list-news/list-news.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { NewReviewToDoctorComponent } from './views/patients/new-review-to-docto
     ListDoctorsComponent,
     DoctorProfileComponent,
     DoctorReviewsComponent,
-    NewReviewToDoctorComponent
+    NewReviewToDoctorComponent,
+    NewCardComponent,
+    ListNewsComponent
   ],
   imports: [
     BrowserModule,
