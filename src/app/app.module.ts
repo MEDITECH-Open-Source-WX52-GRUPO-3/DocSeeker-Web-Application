@@ -32,6 +32,9 @@ import { DoctorProfileComponent } from './views/patients/doctor-profile/doctor-p
 import { DoctorReviewsComponent } from './views/patients/doctor-reviews/doctor-reviews.component';
 import { NewReviewToDoctorComponent } from './views/patients/new-review-to-doctor/new-review-to-doctor.component';
 import { NewCardComponent } from './components/new-card/new-card.component';
+import { ListNewsComponent} from "./views/patients/list-news/list-news.component";
+import {FlexLayoutModule} from "@angular/flex-layout";
+import { MoreInfoNewsComponent } from './components/more-info-news/more-info-news.component';
 
 
 @NgModule({
@@ -52,6 +55,8 @@ import { NewCardComponent } from './components/new-card/new-card.component';
     DoctorReviewsComponent,
     NewReviewToDoctorComponent,
     NewCardComponent,
+    ListNewsComponent,
+    MoreInfoNewsComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +73,8 @@ import { NewCardComponent } from './components/new-card/new-card.component';
     HttpClientModule,
     MatListModule,
     MatSidenavModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    FlexLayoutModule
   ],
   providers: [SourcesService],
   bootstrap: [AppComponent]

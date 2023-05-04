@@ -8,6 +8,7 @@ import {DoctorProfileComponent} from "./views/patients/doctor-profile/doctor-pro
 import {DoctorReviewsComponent} from "./views/patients/doctor-reviews/doctor-reviews.component";
 import {NewReviewToDoctorComponent} from "./views/patients/new-review-to-doctor/new-review-to-doctor.component";
 import {ListNewsComponent} from "./views/patients/list-news/list-news.component";
+import {MoreInfoNewsComponent} from "./components/more-info-news/more-info-news.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'listDoctors', component: ListDoctorsComponent },
   { path: 'listNews', component: ListNewsComponent },
   { path: 'doctor/:id', component: DoctorProfileComponent },
+  { path: 'news/:id', component: MoreInfoNewsComponent },
   { path: 'reviewsDoctor/:id', component: DoctorReviewsComponent },
   { path: 'newReview/:id', component: NewReviewToDoctorComponent }
   //{ path: 'listCards', component: }
