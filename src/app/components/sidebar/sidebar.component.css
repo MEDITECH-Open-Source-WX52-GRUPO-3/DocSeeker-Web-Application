@@ -8,6 +8,15 @@
 }
 
 .mat-icon{
-  vertical-align: center;
+  vertical-align: middle;
   margin-right: 1rem;
+}
+.mat-list-item-end {
+  margin-top: 170%;
+  width: 100%;
+}
+
+.sidebar-option:hover{
+  background-color: #0093AB;
+  color: white;
 }

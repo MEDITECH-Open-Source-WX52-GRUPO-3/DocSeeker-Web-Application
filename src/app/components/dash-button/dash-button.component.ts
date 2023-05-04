@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'app-dash-button',
   templateUrl: './dash-button.component.html',

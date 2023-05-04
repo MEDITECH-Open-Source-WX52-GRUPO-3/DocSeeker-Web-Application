@@ -16,8 +16,6 @@ const routes: Routes = [
   { path: 'doctor/:id', component: DoctorProfileComponent },
   { path: 'reviewsDoctor/:id', component: DoctorReviewsComponent },
   { path: 'newReview/:id', component: NewReviewToDoctorComponent }
-
-
 ];
 
 @NgModule({

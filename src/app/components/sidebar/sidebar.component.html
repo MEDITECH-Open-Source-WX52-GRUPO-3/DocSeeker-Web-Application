@@ -4,20 +4,24 @@
   </div>
   <mat-divider></mat-divider>
   <br>
-  <a mat-list-item>
+  <a class="sidebar-option" routerLink="/dashboard" mat-list-item>
     <mat-icon>home</mat-icon> Home
   </a>
-  <a mat-list-item>
+  <a class="sidebar-option" mat-list-item>
     <mat-icon>person</mat-icon> My profile
   </a>
-  <a mat-list-item>
+  <a class="sidebar-option" mat-list-item>
     <mat-icon>backup_table</mat-icon> News
   </a>
-  <a mat-list-item>
+  <a class="sidebar-option" mat-list-item>
     <mat-icon>medical_information</mat-icon> Prescription
   </a>
-  <a mat-list-item>
+  <a class="sidebar-option" mat-list-item>
     <mat-icon>settings</mat-icon> Configuration
+  </a>
+
+  <a routerLink="/" mat-list-item class="mat-list-item-end">
+    <mat-icon>power_settings_new</mat-icon>Logout
   </a>
 
 </mat-nav-list>
