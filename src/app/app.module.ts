@@ -1,6 +1,4 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './views/home/home.component';
@@ -31,8 +29,11 @@ import { ListDoctorsComponent } from './views/patients/list-doctors/list-doctors
 import { DoctorProfileComponent } from './views/patients/doctor-profile/doctor-profile.component';
 import { DoctorReviewsComponent } from './views/patients/doctor-reviews/doctor-reviews.component';
 import { NewReviewToDoctorComponent } from './views/patients/new-review-to-doctor/new-review-to-doctor.component';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
+import {MatSliderModule} from "@angular/material/slider";
 
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     AppComponent,
     HomeComponent,
@@ -65,7 +66,8 @@ import { NewReviewToDoctorComponent } from './views/patients/new-review-to-docto
     HttpClientModule,
     MatListModule,
     MatSidenavModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    MatSliderModule,
   ],
   providers: [SourcesService],
   bootstrap: [AppComponent]
