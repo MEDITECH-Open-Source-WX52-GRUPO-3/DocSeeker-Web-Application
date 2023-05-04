@@ -70,3 +70,12 @@ h1{
   background-color: white;
   width: 100%;
 }
+igc-rating {
+  margin-left: 27%;
+  transform: scale(2.2);
+  margin-bottom: 5%;
+}
+
+igc-rating::part(symbols) {
+  gap: 30px;
+}
