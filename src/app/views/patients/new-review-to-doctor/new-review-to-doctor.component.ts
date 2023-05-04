@@ -18,6 +18,7 @@ export class NewReviewToDoctorComponent implements OnInit{
   doctors: Array<any> = [];
   doctor: any;
   id="" ;
+  review: any;
 
   constructor(private route: ActivatedRoute, private breakpointObserver: BreakpointObserver, private newsSource: SourcesService, private router: Router) {}
 
