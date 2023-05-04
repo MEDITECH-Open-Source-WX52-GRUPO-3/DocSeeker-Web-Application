@@ -32,7 +32,7 @@ import { DoctorProfileComponent } from './views/patients/doctor-profile/doctor-p
 import { DoctorReviewsComponent } from './views/patients/doctor-reviews/doctor-reviews.component';
 import { NewReviewToDoctorComponent } from './views/patients/new-review-to-doctor/new-review-to-doctor.component';
 import { NewCardComponent } from './components/new-card/new-card.component';
-import { ListNewsComponent } from './view/patients/list-news/list-news.component';
+
 
 @NgModule({
   declarations: [
@@ -52,7 +52,6 @@ import { ListNewsComponent } from './view/patients/list-news/list-news.component
     DoctorReviewsComponent,
     NewReviewToDoctorComponent,
     NewCardComponent,
-    ListNewsComponent
   ],
   imports: [
     BrowserModule,
