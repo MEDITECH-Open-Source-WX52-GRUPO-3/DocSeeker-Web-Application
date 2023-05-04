@@ -12,3 +12,47 @@ mat-drawer{
 mat-drawer-container{
   height: 100%;
 }
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title-container{
+  display: flex;
+  align-self: center;
+}
+
+.information-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.return-button{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.doctorName{
+  font-size: 23px;
+  font-weight: lighter;
+}
+
+.speciality{
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.stars{
+  border-bottom: 1px solid black;
+}

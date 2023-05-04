@@ -4,8 +4,23 @@
   </mat-drawer>
 
   <mat-drawer-content>
-    <div>
-      TU CONTENIDO
+    <div class="wrapper">
+      <div class="title-container">
+        <button mat-button class="return-button">
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+        <h1>New Review</h1>
+      </div>
+      <div class="information-container">
+        <div>
+          <h2 class="speciality">{{doctor.area}}</h2>
+          <h2 class="doctorName name">{{doctor.name}}</h2>
+          <h2 class="stars">Stars</h2>
+
+
+
+        </div>
+      </div>
     </div>
   </mat-drawer-content>
 
