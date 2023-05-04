@@ -1,4 +1,3 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {GoPaymentComponent} from "./components/go-payment/go-payment.component";
 import {PopupComponent} from "./components/popup/popup.component";
@@ -35,8 +34,11 @@ import { NewReviewToDoctorComponent } from './views/patients/new-review-to-docto
 import { DoctorDateComponent } from './views/patients/doctor-date/doctor-date.component';
 import { PaymentComponent } from './views/patients/payment/payment.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
+import {MatSliderModule} from "@angular/material/slider";
 
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     AppComponent,
     HomeComponent,
@@ -74,7 +76,8 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
         MatListModule,
         MatSidenavModule,
         NgOptimizedImage,
-        MatCheckboxModule
+        MatCheckboxModule,
+        MatSliderModule,
     ],
   providers: [SourcesService],
   bootstrap: [AppComponent]
