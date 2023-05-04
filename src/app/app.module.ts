@@ -48,7 +48,7 @@ import { NewReviewToDoctorComponent } from './views/patients/new-review-to-docto
     ListDoctorsComponent,
     DoctorProfileComponent,
     DoctorReviewsComponent,
-    NewReviewToDoctorComponent
+    NewReviewToDoctorComponent,
   ],
   imports: [
     BrowserModule,
