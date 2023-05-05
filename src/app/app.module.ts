@@ -31,6 +31,10 @@ import { ListDoctorsComponent } from './views/patients/list-doctors/list-doctors
 import { DoctorProfileComponent } from './views/patients/doctor-profile/doctor-profile.component';
 import { DoctorReviewsComponent } from './views/patients/doctor-reviews/doctor-reviews.component';
 import { NewReviewToDoctorComponent } from './views/patients/new-review-to-doctor/new-review-to-doctor.component';
+import { NewCardComponent } from './components/new-card/new-card.component';
+import { ListNewsComponent} from "./views/patients/list-news/list-news.component";
+import {FlexLayoutModule} from "@angular/flex-layout";
+import { MoreInfoNewsComponent } from './components/more-info-news/more-info-news.component';
 import { DoctorDateComponent } from './views/patients/doctor-date/doctor-date.component';
 import { PaymentComponent } from './views/patients/payment/payment.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
@@ -58,7 +62,10 @@ import {MatSliderModule} from "@angular/material/slider";
     DoctorDateComponent,
     PaymentComponent,
     GoPaymentComponent,
-    PopupComponent
+    PopupComponent,
+    NewCardComponent,
+    ListNewsComponent,
+    MoreInfoNewsComponent
   ],
     imports: [
         BrowserModule,
@@ -77,7 +84,8 @@ import {MatSliderModule} from "@angular/material/slider";
         MatSidenavModule,
         NgOptimizedImage,
         MatCheckboxModule,
-        MatSliderModule
+        MatSliderModule,
+        FlexLayoutModule
     ],
   providers: [SourcesService],
   bootstrap: [AppComponent]

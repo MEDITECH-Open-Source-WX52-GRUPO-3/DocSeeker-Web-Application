@@ -7,6 +7,8 @@ import {ListDoctorsComponent} from "./views/patients/list-doctors/list-doctors.c
 import {DoctorProfileComponent} from "./views/patients/doctor-profile/doctor-profile.component";
 import {DoctorReviewsComponent} from "./views/patients/doctor-reviews/doctor-reviews.component";
 import {NewReviewToDoctorComponent} from "./views/patients/new-review-to-doctor/new-review-to-doctor.component";
+import {ListNewsComponent} from "./views/patients/list-news/list-news.component";
+import {MoreInfoNewsComponent} from "./components/more-info-news/more-info-news.component";
 import {DoctorDateComponent} from "./views/patients/doctor-date/doctor-date.component";
 import {PaymentComponent} from "./views/patients/payment/payment.component";
 
@@ -15,7 +17,9 @@ const routes: Routes = [
   { path: 'patientsLogIn', component: LogInComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'listDoctors', component: ListDoctorsComponent },
+  { path: 'listNews', component: ListNewsComponent },
   { path: 'doctor/:id', component: DoctorProfileComponent },
+  { path: 'news/:id', component: MoreInfoNewsComponent },
   { path: 'reviewsDoctor/:id', component: DoctorReviewsComponent },
   { path: 'newReview/:id', component: NewReviewToDoctorComponent },
   { path: 'dateAppointment/:id/:idDate', component: DoctorDateComponent },

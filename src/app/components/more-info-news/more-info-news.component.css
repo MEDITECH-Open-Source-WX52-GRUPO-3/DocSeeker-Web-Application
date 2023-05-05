@@ -1,0 +1,11 @@
+.example-card {
+  flex: auto;
+  max-width: 50%;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.mat-card-content {
+  text-align: center;
+}
+
