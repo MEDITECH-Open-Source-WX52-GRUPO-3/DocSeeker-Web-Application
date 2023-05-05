@@ -19,6 +19,7 @@ const routes: Routes = [
   { path: 'listDoctors', component: ListDoctorsComponent },
   { path: 'listNews', component: ListNewsComponent },
   { path: 'doctor/:id', component: DoctorProfileComponent },
+  { path: 'news', component: ListNewsComponent },
   { path: 'news/:id', component: MoreInfoNewsComponent },
   { path: 'reviewsDoctor/:id', component: DoctorReviewsComponent },
   { path: 'newReview/:id', component: NewReviewToDoctorComponent },
