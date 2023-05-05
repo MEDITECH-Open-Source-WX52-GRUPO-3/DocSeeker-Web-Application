@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {GoPaymentComponent} from "./components/go-payment/go-payment.component";
+import {PopupComponent} from "./components/popup/popup.component";
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './views/home/home.component';
@@ -35,9 +35,14 @@ import { NewCardComponent } from './components/new-card/new-card.component';
 import { ListNewsComponent} from "./views/patients/list-news/list-news.component";
 import {FlexLayoutModule} from "@angular/flex-layout";
 import { MoreInfoNewsComponent } from './components/more-info-news/more-info-news.component';
-
+import { DoctorDateComponent } from './views/patients/doctor-date/doctor-date.component';
+import { PaymentComponent } from './views/patients/payment/payment.component';
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
+import {MatSliderModule} from "@angular/material/slider";
 
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     AppComponent,
     HomeComponent,
@@ -54,28 +59,34 @@ import { MoreInfoNewsComponent } from './components/more-info-news/more-info-new
     DoctorProfileComponent,
     DoctorReviewsComponent,
     NewReviewToDoctorComponent,
+    DoctorDateComponent,
+    PaymentComponent,
+    GoPaymentComponent,
+    PopupComponent,
     NewCardComponent,
     ListNewsComponent,
     MoreInfoNewsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatTabsModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatIconModule,
-    FormsModule,
-    MatButtonModule,
-    HttpClientModule,
-    MatListModule,
-    MatSidenavModule,
-    NgOptimizedImage,
-    FlexLayoutModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatCardModule,
+        MatTabsModule,
+        MatInputModule,
+        MatFormFieldModule,
+        MatIconModule,
+        FormsModule,
+        MatButtonModule,
+        HttpClientModule,
+        MatListModule,
+        MatSidenavModule,
+        NgOptimizedImage,
+        MatCheckboxModule,
+        MatSliderModule,
+        FlexLayoutModule
+    ],
   providers: [SourcesService],
   bootstrap: [AppComponent]
 })

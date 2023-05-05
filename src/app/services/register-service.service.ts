@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {Patient} from "../Interfaces/patient";
 
-
 @Injectable({
   providedIn: 'root'
 })
