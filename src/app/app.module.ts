@@ -54,7 +54,11 @@ import {MatSliderModule} from "@angular/material/slider";
     ListDoctorsComponent,
     DoctorProfileComponent,
     DoctorReviewsComponent,
-    NewReviewToDoctorComponent
+    NewReviewToDoctorComponent,
+    DoctorDateComponent,
+    PaymentComponent,
+    GoPaymentComponent,
+    PopupComponent
   ],
     imports: [
         BrowserModule,
@@ -73,11 +77,7 @@ import {MatSliderModule} from "@angular/material/slider";
         MatSidenavModule,
         NgOptimizedImage,
         MatCheckboxModule,
-        MatSliderModule,
-        GoPaymentComponent,
-        PopupComponent,
-        DoctorDateComponent,
-        PaymentComponent
+        MatSliderModule
     ],
   providers: [SourcesService],
   bootstrap: [AppComponent]
