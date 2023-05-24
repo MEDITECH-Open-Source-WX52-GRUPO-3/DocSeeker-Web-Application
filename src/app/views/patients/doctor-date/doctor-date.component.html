@@ -1,0 +1,22 @@
+<mat-drawer-container>
+  <mat-drawer mode="side" opened="true">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div class="payment-container">
+      <div class="text-container">
+        <h1 class="centered">Book your appointment</h1>
+        <p>These are all available for the selected date</p>
+      </div>
+      <!-- THIS WILL BE UPDATE WITH AN NGFOR OF ARRAY HOURSDATES -->
+      <div class="payment-item">
+        <app-go-payment></app-go-payment>
+      </div>
+      <div class="payment-item">
+        <app-go-payment></app-go-payment>
+      </div>
+    </div>
+  </mat-drawer-content>
+
+</mat-drawer-container>
