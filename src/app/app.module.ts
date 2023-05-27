@@ -40,6 +40,7 @@ import { PaymentComponent } from './views/patients/payment/payment.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import {MatSliderModule} from "@angular/material/slider";
+import { PrescriptionsComponent } from './views/patients/prescriptions/prescriptions.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -65,7 +66,8 @@ import {MatSliderModule} from "@angular/material/slider";
     PopupComponent,
     NewCardComponent,
     ListNewsComponent,
-    MoreInfoNewsComponent
+    MoreInfoNewsComponent,
+    PrescriptionsComponent
   ],
     imports: [
         BrowserModule,
