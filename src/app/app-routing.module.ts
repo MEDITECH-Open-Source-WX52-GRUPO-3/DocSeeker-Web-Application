@@ -11,6 +11,7 @@ import {ListNewsComponent} from "./views/patients/list-news/list-news.component"
 import {MoreInfoNewsComponent} from "./components/more-info-news/more-info-news.component";
 import {DoctorDateComponent} from "./views/patients/doctor-date/doctor-date.component";
 import {PaymentComponent} from "./views/patients/payment/payment.component";
+import {PrescriptionsComponent} from "./views/patients/prescriptions/prescriptions.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'reviewsDoctor/:id', component: DoctorReviewsComponent },
   { path: 'newReview/:id', component: NewReviewToDoctorComponent },
   { path: 'dateAppointment/:id/:idDate', component: DoctorDateComponent },
-  { path: 'payment/:id/:idDate/:idHours', component: PaymentComponent }
+  { path: 'payment/:id/:idDate/:idHours', component: PaymentComponent },
+  { path: 'prescriptions', component: PrescriptionsComponent}
 
 
 ];
