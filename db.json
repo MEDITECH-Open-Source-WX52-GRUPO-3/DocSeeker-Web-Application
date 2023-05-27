@@ -565,7 +565,7 @@
       ]
     }
   ],
-    "reviews": [
+  "reviews": [
     {
       "id": 0,
       "profilePhotoUrl": "../../src/assets/images/Camila Hernández image.jpg",
@@ -718,6 +718,55 @@
       "doctorId": 3,
       "date": "2022-10-28",
       "hourId": 0
+    },
+    {
+      "id": 10,
+      "idPatient": "0",
+      "doctorId": 0,
+      "date": "2023-05-26",
+      "hourId": 0
+    },
+    {
+      "id": 11,
+      "idPatient": "0",
+      "doctorId": 0,
+      "date": "2023-05-26",
+      "hourId": 4
+    },
+    {
+      "id": 12,
+      "idPatient": 0,
+      "doctorId": 0,
+      "date": "2023-05-26",
+      "hourId": 2
+    },
+    {
+      "id": 13,
+      "idPatient": 0,
+      "doctorId": 0,
+      "date": "2023-05-26",
+      "hourId": 1
+    },
+    {
+      "id": 14,
+      "idPatient": 0,
+      "doctorId": 3,
+      "date": "2023-05-29",
+      "hourId": 2
+    },
+    {
+      "id": 15,
+      "idPatient": 0,
+      "doctorId": 3,
+      "date": "2023-05-29",
+      "hourId": 2
+    },
+    {
+      "id": 16,
+      "idPatient": 0,
+      "doctorId": 4,
+      "date": "2023-05-27",
+      "hourId": 2
     }
   ],
   "prescriptions": [
@@ -1010,7 +1059,6 @@
           "date": "22/10/2022",
           "content": "Show evidence of stomache"
         }
-
       ]
     },
     {
@@ -1053,7 +1101,6 @@
           "date": "24/10/2022",
           "content": "Show evidence of bad alimentation"
         }
-
       ]
     },
     {
