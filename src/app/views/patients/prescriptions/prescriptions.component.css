@@ -55,6 +55,7 @@ h3 {
 }
 
 .recommendations-card {
+  border-radius: 15px;
   background-color: #4F4F4F;
   display: flex;
   flex-direction: row;
@@ -68,14 +69,17 @@ h3 {
 }
 
 .medicine-card{
+  border-radius: 15px;
   background-color: #4F4F4F;
 }
 
 .dose-card{
+  border-radius: 15px;
   background-color: #4F4F4F;
 }
 
 .where-to-get-it-card{
+  border-radius: 15px;
   background-color: #4F4F4F;
 }
 
@@ -121,3 +125,16 @@ h3 {
 .spacer{
   margin-top: 5%;
 }
+
+.logos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-image {
+  border-radius: 7px;
+  width: 25%;
+  margin: 10px;
+}
+
