@@ -11,6 +11,7 @@ import {ListNewsComponent} from "./views/patients/list-news/list-news.component"
 import {MoreInfoNewsComponent} from "./components/more-info-news/more-info-news.component";
 import {DoctorDateComponent} from "./views/patients/doctor-date/doctor-date.component";
 import {PaymentComponent} from "./views/patients/payment/payment.component";
+import {ListPrescriptionComponent} from "./views/patients/list-prescription/list-prescription.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'listNews', component: ListNewsComponent },
   { path: 'doctor/:id', component: DoctorProfileComponent },
   { path: 'news', component: ListNewsComponent },
+  { path: 'prescriptions', component: ListPrescriptionComponent },
   { path: 'news/:id', component: MoreInfoNewsComponent },
   { path: 'reviewsDoctor/:id', component: DoctorReviewsComponent },
   { path: 'newReview/:id', component: NewReviewToDoctorComponent },
