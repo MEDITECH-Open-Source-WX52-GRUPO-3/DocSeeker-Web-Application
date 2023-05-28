@@ -37,13 +37,6 @@ export class ListPrescriptionComponent implements OnInit, AfterViewInit{
     })
   }
 
-  getCustomersById(id:number){
-    this.prescriptionService.getById(id).subscribe((response: any)=>{
-      console.log(response);
-      this.dataSource.data = response;
-    })
-  }
-
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
