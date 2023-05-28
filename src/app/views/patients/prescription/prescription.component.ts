@@ -11,6 +11,8 @@ import {ActivatedRoute} from "@angular/router";
 export class PrescriptionComponent implements OnInit{
 
   prescription !: Prescriptions;
+  medicine!: any;
+  meals !: any;
 
   constructor(
     private prescriptionsService: PrescriptionsService,
@@ -27,8 +29,10 @@ export class PrescriptionComponent implements OnInit{
       console.log(response);
       console.log(id);
       this.prescription = response;
+      this.medicine = response["medicines"];
+      this.meals = response["meals"];
+      console.log(this.medicine);
     })
   }
-
 
 }
