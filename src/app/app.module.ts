@@ -46,6 +46,7 @@ import { ListPrescriptionComponent } from './views/patients/list-prescription/li
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
+import { PrescriptionComponent } from './views/patients/prescription/prescription.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -72,7 +73,8 @@ import {MatSortModule} from "@angular/material/sort";
     NewCardComponent,
     ListNewsComponent,
     MoreInfoNewsComponent,
-    ListPrescriptionComponent
+    ListPrescriptionComponent,
+    PrescriptionComponent
   ],
   imports: [
     BrowserModule,
