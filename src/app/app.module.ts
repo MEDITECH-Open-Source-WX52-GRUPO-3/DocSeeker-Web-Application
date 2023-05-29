@@ -42,6 +42,7 @@ import { PaymentComponent } from './views/patients/payment/payment.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import {MatSliderModule} from "@angular/material/slider";
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -69,28 +70,29 @@ import {MatSliderModule} from "@angular/material/slider";
     ListNewsComponent,
     MoreInfoNewsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatTabsModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatIconModule,
-    FormsModule,
-    MatButtonModule,
-    HttpClientModule,
-    MatListModule,
-    MatSidenavModule,
-    NgOptimizedImage,
-    MatCheckboxModule,
-    MatSliderModule,
-    FlexLayoutModule,
-    MatDatepickerModule,
-    MatNativeDateModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatCardModule,
+        MatTabsModule,
+        MatInputModule,
+        MatFormFieldModule,
+        MatIconModule,
+        FormsModule,
+        MatButtonModule,
+        HttpClientModule,
+        MatListModule,
+        MatSidenavModule,
+        NgOptimizedImage,
+        MatCheckboxModule,
+        MatSliderModule,
+        FlexLayoutModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatSelectModule
+    ],
   providers: [SourcesService],
   bootstrap: [AppComponent]
 })
