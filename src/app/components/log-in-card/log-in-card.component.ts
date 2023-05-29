@@ -26,7 +26,7 @@ export class LogInCardComponent implements OnInit{
     );
 
   rpassword: string='';
-  patient: Patient ={ dni: '', password:''};
+  patient: Patient ={ id:0, name:'',dni: '', password:'',photo:''};
   patients: Array<any> = [];
   signInForm: FormGroup;
   constructor(private breakpointObserver: BreakpointObserver, private newsSource: SourcesService, private snackBar:MatSnackBar, private loginService:LogInService, public builder:FormBuilder, private router: Router) {
@@ -51,7 +51,7 @@ export class LogInCardComponent implements OnInit{
     } else {
       this.snackBar.open('Password and Confirmation Password must be the same', '', {duration: 1000})
     }
-    this.patient={dni:'', password:''};
+    this.patient={id:0, name:'',dni:'', password:'',photo:''};
     this.rpassword='';
   }
 
