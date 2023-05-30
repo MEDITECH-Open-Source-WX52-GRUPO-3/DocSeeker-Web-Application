@@ -42,6 +42,7 @@ import { PaymentComponent } from './views/patients/payment/payment.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import {MatSliderModule} from "@angular/material/slider";
+import { MedicalHistoryComponent } from './views/patients/medical-history/medical-history.component';
 import { ListPrescriptionComponent } from './views/patients/list-prescription/list-prescription.component';
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatTableModule} from "@angular/material/table";
@@ -74,6 +75,7 @@ import {MatSelectModule} from "@angular/material/select";
     NewCardComponent,
     ListNewsComponent,
     MoreInfoNewsComponent,
+    MedicalHistoryComponent
     ListPrescriptionComponent,
     PrescriptionComponent
   ],

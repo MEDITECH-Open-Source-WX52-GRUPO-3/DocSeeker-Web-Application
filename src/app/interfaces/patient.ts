@@ -1,4 +1,6 @@
 export interface Patient{
+  id:number;
+  name:string;
   dni: string;
   name: string;
   gender: string;
@@ -8,3 +10,5 @@ export interface Patient{
   password: string;
   photo: string;
 }
+
+
