@@ -43,6 +43,12 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import {MatSliderModule} from "@angular/material/slider";
 import { MedicalHistoryComponent } from './views/patients/medical-history/medical-history.component';
+import { ListPrescriptionComponent } from './views/patients/list-prescription/list-prescription.component';
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatTableModule} from "@angular/material/table";
+import {MatSortModule} from "@angular/material/sort";
+import { PrescriptionComponent } from './views/patients/prescription/prescription.component';
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -70,6 +76,8 @@ import { MedicalHistoryComponent } from './views/patients/medical-history/medica
     ListNewsComponent,
     MoreInfoNewsComponent,
     MedicalHistoryComponent
+    ListPrescriptionComponent,
+    PrescriptionComponent
   ],
   imports: [
     BrowserModule,
@@ -91,8 +99,13 @@ import { MedicalHistoryComponent } from './views/patients/medical-history/medica
     MatSliderModule,
     FlexLayoutModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatSelectModule,
+    MatSortModule
   ],
+
   providers: [SourcesService],
   bootstrap: [AppComponent]
 })
