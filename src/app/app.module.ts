@@ -47,6 +47,7 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
 import { PrescriptionComponent } from './views/patients/prescription/prescription.component';
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -99,8 +100,10 @@ import { PrescriptionComponent } from './views/patients/prescription/prescriptio
     MatNativeDateModule,
     MatPaginatorModule,
     MatTableModule,
+    MatSelectModule,
     MatSortModule
   ],
+
   providers: [SourcesService],
   bootstrap: [AppComponent]
 })
