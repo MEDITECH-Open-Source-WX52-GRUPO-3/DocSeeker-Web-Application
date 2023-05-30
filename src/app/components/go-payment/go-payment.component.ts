@@ -9,7 +9,6 @@ export class GoPaymentComponent {
   @Input() dateText = 'Date';
   @Input()timeText = 'Hour';
   @Input() doctorName="Doctor Name";
-  @Input()disease = 'disease_patient';
   @Input() payment = 'payment';
 
   goToPayment(): void {

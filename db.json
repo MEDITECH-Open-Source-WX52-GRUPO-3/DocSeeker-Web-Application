@@ -565,7 +565,7 @@
       ]
     }
   ],
-    "reviews": [
+  "reviews": [
     {
       "id": 0,
       "profilePhotoUrl": "../../src/assets/images/Camila Hernández image.jpg",
@@ -718,6 +718,55 @@
       "doctorId": 3,
       "date": "2022-10-28",
       "hourId": 0
+    },
+    {
+      "id": 10,
+      "idPatient": "0",
+      "doctorId": 0,
+      "date": "2023-05-26",
+      "hourId": 0
+    },
+    {
+      "id": 11,
+      "idPatient": "0",
+      "doctorId": 0,
+      "date": "2023-05-26",
+      "hourId": 4
+    },
+    {
+      "id": 12,
+      "idPatient": 0,
+      "doctorId": 0,
+      "date": "2023-05-26",
+      "hourId": 2
+    },
+    {
+      "id": 13,
+      "idPatient": 0,
+      "doctorId": 0,
+      "date": "2023-05-26",
+      "hourId": 1
+    },
+    {
+      "id": 14,
+      "idPatient": 0,
+      "doctorId": 3,
+      "date": "2023-05-29",
+      "hourId": 2
+    },
+    {
+      "id": 15,
+      "idPatient": 0,
+      "doctorId": 3,
+      "date": "2023-05-29",
+      "hourId": 2
+    },
+    {
+      "id": 16,
+      "idPatient": 0,
+      "doctorId": 4,
+      "date": "2023-05-27",
+      "hourId": 2
     }
   ],
   "prescriptions": [
@@ -768,7 +817,7 @@
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Amoxicilina - 100g"
         },
         {
           "id": 1,
@@ -798,14 +847,14 @@
       "dateExpiration": "09/06/2018",
       "medicalSpeciality": "Dermatology",
       "recipCode": "123456789",
-      "condition": "Valid",
+      "condition": "No Valid",
       "rest": ". Sleep a lot Rest your voice too.",
       "drink": ". Liquids keep the throat hydrated and prevent dehydration. Avoid caffeine and alcohol, which can dehydrate you.",
       "food": ". Hot beverages, such as broth, non-caffeinated tea, or warm water with honethroat. You should never give honey to babies younger than 1 month old.",
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Cetirizina - 100g"
         },
         {
           "id": 1,
@@ -831,14 +880,14 @@
       "dateExpiration": "09/06/2018",
       "medicalSpeciality": "Dermatology",
       "recipCode": "123456789",
-      "condition": "Valid",
+      "condition": "No Valid",
       "rest": ". Sleep a lot Rest your voice too.",
       "drink": ". Liquids keep the throat hydrated and prevent dehydration. Avoid caffeine and alcohol, which can dehydrate you.",
       "food": ". Hot beverages, such as broth, non-caffeinated tea, or warm water with honey, and cold snacks, such as popsicle sticks, can soothe a sore throat. You should never give honey to babies younger than 1 month old.",
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Aspirina - 100g"
         },
         {
           "id": 1,
@@ -864,14 +913,14 @@
       "dateExpiration": "09/06/2018",
       "medicalSpeciality": "Dermatology",
       "recipCode": "123456789",
-      "condition": "Valid",
+      "condition": "No Valid",
       "rest": ". Sleep a lot Rest your voice too.",
       "drink": ". Liquids keep the throat hydrated and prevent dehydration. Avoid caffeine and alcohol, which can dehydrate you.",
       "food": ". Hot beverages, such as broth, non-caffeinated tea, or warm water with honey, and cold snacks, such as popsicle sticks, can soothe a sore throat. You should never give honey to babies younger than 1 month old.",
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Losartán - 100g"
         },
         {
           "id": 1,
@@ -904,7 +953,7 @@
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Metformina - 100g"
         },
         {
           "id": 1,
@@ -937,7 +986,7 @@
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Ibuprofeno - 100g"
         },
         {
           "id": 1,
@@ -970,7 +1019,7 @@
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Lorazepam - 100g"
         },
         {
           "id": 1,
@@ -1010,7 +1059,6 @@
           "date": "22/10/2022",
           "content": "Show evidence of stomache"
         }
-
       ]
     },
     {
@@ -1053,7 +1101,6 @@
           "date": "24/10/2022",
           "content": "Show evidence of bad alimentation"
         }
-
       ]
     },
     {

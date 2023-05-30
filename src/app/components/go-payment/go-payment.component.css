@@ -13,7 +13,7 @@
   border-radius: 20px;
   border: none;
   transition: all .2s;
-
+  margin: 0 5rem;
 }
 .go-payment-container:hover{
   cursor: pointer;
@@ -36,14 +36,14 @@
 
 .date-text {
   position: absolute;
-  top: 25%; /* Ajustar la posición vertical */
+  top: 25%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 30px;
+  font-size: 18px;
 }
 
 .time-text {
-  font-size: 30px;
+  font-size: 20px;
   position:absolute;
   left: 50%;
   transform: translate(-50%, 50%);

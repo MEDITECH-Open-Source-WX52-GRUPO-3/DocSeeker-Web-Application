@@ -25,6 +25,8 @@ import {MatCardModule} from "@angular/material/card";
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatInputModule} from "@angular/material/input";
 import {MatIconModule} from "@angular/material/icon";
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
 import {FormsModule} from "@angular/forms";
 import { DashboardComponent } from './views/patients/dashboard/dashboard.component';
 import { ListDoctorsComponent } from './views/patients/list-doctors/list-doctors.component';
@@ -40,7 +42,12 @@ import { PaymentComponent } from './views/patients/payment/payment.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import {MatSliderModule} from "@angular/material/slider";
-import { PrescriptionsComponent } from './views/patients/prescriptions/prescriptions.component';
+import { ListPrescriptionComponent } from './views/patients/list-prescription/list-prescription.component';
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatTableModule} from "@angular/material/table";
+import {MatSortModule} from "@angular/material/sort";
+import { PrescriptionComponent } from './views/patients/prescription/prescription.component';
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -67,28 +74,36 @@ import { PrescriptionsComponent } from './views/patients/prescriptions/prescript
     NewCardComponent,
     ListNewsComponent,
     MoreInfoNewsComponent,
-    PrescriptionsComponent
+    ListPrescriptionComponent,
+    PrescriptionComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatToolbarModule,
-        MatCardModule,
-        MatTabsModule,
-        MatInputModule,
-        MatFormFieldModule,
-        MatIconModule,
-        FormsModule,
-        MatButtonModule,
-        HttpClientModule,
-        MatListModule,
-        MatSidenavModule,
-        NgOptimizedImage,
-        MatCheckboxModule,
-        MatSliderModule,
-        FlexLayoutModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatTabsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatIconModule,
+    FormsModule,
+    MatButtonModule,
+    HttpClientModule,
+    MatListModule,
+    MatSidenavModule,
+    NgOptimizedImage,
+    MatCheckboxModule,
+    MatSliderModule,
+    FlexLayoutModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatSelectModule,
+    MatSortModule
+  ],
+
   providers: [SourcesService],
   bootstrap: [AppComponent]
 })

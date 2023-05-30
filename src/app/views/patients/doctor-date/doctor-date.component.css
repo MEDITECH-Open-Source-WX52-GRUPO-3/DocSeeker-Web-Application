@@ -9,6 +9,10 @@ mat-drawer {
   background: #E0E0E0;
 }
 
+.card-hour{
+  margin: 2rem 8rem;
+
+}
 .text-container {
   position: absolute;
   top: 10%;
@@ -43,7 +47,15 @@ mat-drawer-container {
 .payment-item {
   margin-bottom: 60px;
 }
+h1{
+  margin: 2rem 8rem;
+  font-weight: bold;
+  font-size: 30px;
+}
+p{
+  margin: 2rem 8rem;
 
+}
 @media screen and (max-width: 768px) {
   .text-container {
     position: relative;
