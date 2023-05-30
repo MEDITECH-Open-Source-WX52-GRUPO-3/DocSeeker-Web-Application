@@ -28,7 +28,8 @@ const routes: Routes = [
   { path: 'reviewsDoctor/:id', component: DoctorReviewsComponent },
   { path: 'newReview/:id', component: NewReviewToDoctorComponent },
   { path: 'dateAppointment/:id/:idDate', component: DoctorDateComponent },
-  { path: 'payment/:id/:idDate/:idHours', component: PaymentComponent }
+  { path: 'payment/:id/:idDate/:idHours', component: PaymentComponent },
+  { path: 'prescriptions/:id', component: PrescriptionsComponent}
 
 
 ];
