@@ -9,9 +9,10 @@ import { Patient } from '../../../interfaces/patient';
   styleUrls: ['./medical-history.component.css']
 })
 export class MedicalHistoryComponent implements OnInit {
-  medicalInformation: any[] = [];
-  patientId: number | undefined;
-  patients: Patient[] = [];
+  idPatient =""
+  medicalInformation: any;
+  currentPatient: any;
+  patient: any;
 
   constructor(
     private sourcesService: SourcesService,
@@ -19,22 +20,20 @@ export class MedicalHistoryComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    this.idPatient = this.route.snapshot.params['id'];
+    this.currentPatient = localStorage.getItem('currentPatient');
+    if (this.currentPatient) {
+      this.currentPatient = JSON.parse(this.currentPatient);
+    }
     this.sourcesService
       .getSources('medicalInformation')
       .subscribe((data: any) => {
-        this.medicalInformation = data;
+        this.medicalInformation = data.find((medical: any) => medical.idPatient == this.idPatient);
         console.log("Medical Information: ", this.medicalInformation);
       });
 
-    this.sourcesService.getSources('patients').subscribe((data: any): void => {
-      this.patients = data;
-    });
-
-    this.route.paramMap.subscribe(params => {
-      this.patientId = Number(params.get('id'));
-    });
   }
-
+/*
   getMedicalHistoryByPatientId(): any[] {
     return this.medicalInformation
       .filter(history => history.idPatient === this.patientId)
@@ -46,5 +45,5 @@ export class MedicalHistoryComponent implements OnInit {
   getPatientPhotoById(id: number): string {
     const patient = this.patients.find(p => p.id === id);
     return patient ? patient.photo : '';
-  }
+  }*/
 }

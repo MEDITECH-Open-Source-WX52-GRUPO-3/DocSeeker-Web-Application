@@ -75,7 +75,7 @@ import {MatSelectModule} from "@angular/material/select";
     NewCardComponent,
     ListNewsComponent,
     MoreInfoNewsComponent,
-    MedicalHistoryComponent
+    MedicalHistoryComponent,
     ListPrescriptionComponent,
     PrescriptionComponent
   ],

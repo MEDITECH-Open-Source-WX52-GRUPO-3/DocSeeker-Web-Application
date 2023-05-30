@@ -36,14 +36,14 @@
         </div>
       </div>
 
-      <div class="card">
+      <div [routerLink]="['/medicalHistory', currentPatient.id]" class="card">
         <img class="appointment_option" src="assets/images/menu-medic.png">
         <br>
         <div class="option_name">
           <a>Medical<br>History</a>
         </div>
       </div>
-      <div class="card">
+      <div routerLink="/prescriptions" class="card">
         <img class="appointment_option" src="assets/images/menu-prescription.png">
         <br>
         <div class="option_name">

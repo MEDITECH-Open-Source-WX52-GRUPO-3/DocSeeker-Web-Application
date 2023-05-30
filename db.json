@@ -767,6 +767,13 @@
       "doctorId": 4,
       "date": "2023-05-27",
       "hourId": 2
+    },
+    {
+      "id": 17,
+      "idPatient": 0,
+      "doctorId": 4,
+      "date": "2023-05-25",
+      "hourId": 3
     }
   ],
   "prescriptions": [

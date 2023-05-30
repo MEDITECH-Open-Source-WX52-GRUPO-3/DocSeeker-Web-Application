@@ -14,6 +14,7 @@ export class ListPrescriptionComponent implements OnInit, AfterViewInit{
 
   prescriptionData !: Prescriptions;
   dataSource !: MatTableDataSource<any>;
+  currentPatient: any;
   displayedColumns: string[] = ['id', 'dateIssue', 'dateExpiration', 'medicalSpeciality', 'recipCode', 'condition', 'action'];
 
   @ViewChild(MatPaginator, { static: true }) paginator !: MatPaginator;
@@ -24,6 +25,10 @@ export class ListPrescriptionComponent implements OnInit, AfterViewInit{
   }
 
   ngOnInit() {
+    this.currentPatient = localStorage.getItem('currentPatient');
+    if (this.currentPatient) {
+      this.currentPatient = JSON.parse(this.currentPatient);
+    }
     this.getAllPrescriptions();
     this.dataSource.paginator = this.paginator;
   }
@@ -33,7 +38,15 @@ export class ListPrescriptionComponent implements OnInit, AfterViewInit{
 
   getAllPrescriptions(){
     this.prescriptionService.getAll().subscribe((response: any)=>{
-      this.dataSource.data =response;
+
+      this.dataSource.data =response.filter((prescription: any) => {
+        if (prescription.idPatient == this.currentPatient.id){
+          console.log("SI VA")
+          return true;
+        }
+        console.log("NO VA")
+        return false
+      });
     })
   }
 
