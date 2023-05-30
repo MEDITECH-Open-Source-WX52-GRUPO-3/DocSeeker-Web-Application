@@ -1,0 +1,57 @@
+<mat-drawer-container>
+  <mat-drawer mode="side" opened="true">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div class="container">
+      <h1>Prescriptions</h1>
+    </div>
+
+    <div class="recommendations" fxLayout="row" fxLayout.lt-md="column">
+      <mat-card class="example-card" *ngIf="prescription">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title class="custom">Recommendations</mat-card-title>
+            <mat-card-subtitle class="custom"><strong>Rest </strong>{{prescription.rest}}</mat-card-subtitle>
+            <mat-card-subtitle class="custom"><strong>Drink Liquids</strong>{{prescription.drink}}</mat-card-subtitle>
+            <mat-card-subtitle class="custom"><strong>Try Comfort Foods And Drinks </strong>{{prescription.food}}</mat-card-subtitle>
+            <img mat-card-lg-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+          </mat-card-title-group>
+        </mat-card-header>
+      </mat-card>
+    </div>
+
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="16px">
+      <mat-card class="example-card2" fxFlex="33%">
+        <mat-card-header class="custom2" *ngIf="prescription">
+          <mat-card-title>Medicine</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="custom2" *ngFor="let med of medicine">
+          <p>{{med.medicine}}</p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="example-card2" fxFlex="33%">
+        <mat-card-header class="custom2" *ngIf="prescription">
+          <mat-card-title>Dose</mat-card-title>
+          <mat-card-title>{{prescription.numberDose}} <span>Reminders</span></mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="custom2" *ngFor="let meal of meals" >
+          <h5>{{meal}}</h5>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="example-card2" fxFlex="33%">
+        <mat-card-header class="custom2">
+          <mat-card-title>Where to Get It</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="custom2">
+          <p>Continuara</p>
+        </mat-card-content>
+      </mat-card>
+
+    </div>
+
+  </mat-drawer-content>
+</mat-drawer-container>

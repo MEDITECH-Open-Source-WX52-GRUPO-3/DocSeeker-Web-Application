@@ -817,7 +817,7 @@
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Amoxicilina - 100g"
         },
         {
           "id": 1,
@@ -847,14 +847,14 @@
       "dateExpiration": "09/06/2018",
       "medicalSpeciality": "Dermatology",
       "recipCode": "123456789",
-      "condition": "Valid",
+      "condition": "No Valid",
       "rest": ". Sleep a lot Rest your voice too.",
       "drink": ". Liquids keep the throat hydrated and prevent dehydration. Avoid caffeine and alcohol, which can dehydrate you.",
       "food": ". Hot beverages, such as broth, non-caffeinated tea, or warm water with honethroat. You should never give honey to babies younger than 1 month old.",
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Cetirizina - 100g"
         },
         {
           "id": 1,
@@ -880,14 +880,14 @@
       "dateExpiration": "09/06/2018",
       "medicalSpeciality": "Dermatology",
       "recipCode": "123456789",
-      "condition": "Valid",
+      "condition": "No Valid",
       "rest": ". Sleep a lot Rest your voice too.",
       "drink": ". Liquids keep the throat hydrated and prevent dehydration. Avoid caffeine and alcohol, which can dehydrate you.",
       "food": ". Hot beverages, such as broth, non-caffeinated tea, or warm water with honey, and cold snacks, such as popsicle sticks, can soothe a sore throat. You should never give honey to babies younger than 1 month old.",
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Aspirina - 100g"
         },
         {
           "id": 1,
@@ -913,14 +913,14 @@
       "dateExpiration": "09/06/2018",
       "medicalSpeciality": "Dermatology",
       "recipCode": "123456789",
-      "condition": "Valid",
+      "condition": "No Valid",
       "rest": ". Sleep a lot Rest your voice too.",
       "drink": ". Liquids keep the throat hydrated and prevent dehydration. Avoid caffeine and alcohol, which can dehydrate you.",
       "food": ". Hot beverages, such as broth, non-caffeinated tea, or warm water with honey, and cold snacks, such as popsicle sticks, can soothe a sore throat. You should never give honey to babies younger than 1 month old.",
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Losartán - 100g"
         },
         {
           "id": 1,
@@ -953,7 +953,7 @@
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Metformina - 100g"
         },
         {
           "id": 1,
@@ -986,7 +986,7 @@
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Ibuprofeno - 100g"
         },
         {
           "id": 1,
@@ -1019,7 +1019,7 @@
       "medicines": [
         {
           "id": 0,
-          "medicine": "Paracetamol - 100g"
+          "medicine": "Lorazepam - 100g"
         },
         {
           "id": 1,

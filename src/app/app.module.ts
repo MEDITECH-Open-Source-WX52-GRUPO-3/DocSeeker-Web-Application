@@ -42,6 +42,11 @@ import { PaymentComponent } from './views/patients/payment/payment.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import {MatSliderModule} from "@angular/material/slider";
+import { ListPrescriptionComponent } from './views/patients/list-prescription/list-prescription.component';
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatTableModule} from "@angular/material/table";
+import {MatSortModule} from "@angular/material/sort";
+import { PrescriptionComponent } from './views/patients/prescription/prescription.component';
 import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
@@ -68,31 +73,37 @@ import {MatSelectModule} from "@angular/material/select";
     PopupComponent,
     NewCardComponent,
     ListNewsComponent,
-    MoreInfoNewsComponent
+    MoreInfoNewsComponent,
+    ListPrescriptionComponent,
+    PrescriptionComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatToolbarModule,
-        MatCardModule,
-        MatTabsModule,
-        MatInputModule,
-        MatFormFieldModule,
-        MatIconModule,
-        FormsModule,
-        MatButtonModule,
-        HttpClientModule,
-        MatListModule,
-        MatSidenavModule,
-        NgOptimizedImage,
-        MatCheckboxModule,
-        MatSliderModule,
-        FlexLayoutModule,
-        MatDatepickerModule,
-        MatNativeDateModule,
-        MatSelectModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatTabsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatIconModule,
+    FormsModule,
+    MatButtonModule,
+    HttpClientModule,
+    MatListModule,
+    MatSidenavModule,
+    NgOptimizedImage,
+    MatCheckboxModule,
+    MatSliderModule,
+    FlexLayoutModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatSelectModule,
+    MatSortModule
+  ],
+
   providers: [SourcesService],
   bootstrap: [AppComponent]
 })
