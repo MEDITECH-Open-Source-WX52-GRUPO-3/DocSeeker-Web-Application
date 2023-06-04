@@ -1,6 +1,6 @@
 /*
 import {Component, OnInit} from '@angular/core';
-import {Prescriptions} from "../../../Interfaces/prescriptions";
+import {Prescriptions} from "../../../interfaces/prescriptions";
 import {PrescriptionsService} from "../../../services/prescriptions.service";
 import {ActivatedRoute} from "@angular/router";
 
