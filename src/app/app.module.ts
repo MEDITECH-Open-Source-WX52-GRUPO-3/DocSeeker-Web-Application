@@ -49,6 +49,9 @@ import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
 import { PrescriptionComponent } from './views/patients/prescription/prescription.component';
 import {MatSelectModule} from "@angular/material/select";
+import { ProfileComponent } from './views/patients/profile/profile.component';
+import { EditProfileComponent } from './views/patients/edit-profile/edit-profile.component';
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -77,7 +80,9 @@ import {MatSelectModule} from "@angular/material/select";
     MoreInfoNewsComponent,
     MedicalHistoryComponent,
     ListPrescriptionComponent,
-    PrescriptionComponent
+    PrescriptionComponent,
+    ProfileComponent,
+    EditProfileComponent,
   ],
   imports: [
     BrowserModule,

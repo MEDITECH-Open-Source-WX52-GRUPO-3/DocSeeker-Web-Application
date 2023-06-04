@@ -187,6 +187,17 @@
       "cell2": "987456123",
       "password": "luispineda01",
       "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png"
+    },
+    {
+      "dni": "123",
+      "name": "jonatan",
+      "gender": "male",
+      "birthday": "1999-12-12",
+      "email": "jona@gmail.com",
+      "cellphone": "123123",
+      "password": "123123",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png",
+      "id": 7
     }
   ],
   "medicalInformation": [
