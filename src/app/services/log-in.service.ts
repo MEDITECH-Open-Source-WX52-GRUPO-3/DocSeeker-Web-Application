@@ -18,6 +18,11 @@ export class LogInService {
     return this.http.post(url, patient);
   }
 
+  updatePatient(patient: Patient, id :any){
+    const url = `http://localhost:3000/patients/${id}`;
+    return this.http.put(url, patient);
+  }
+
   getPatient(dni:string, password:string): Patient | undefined {
     return this.patients.find(patient => patient.dni==dni && patient.password == password);
   }

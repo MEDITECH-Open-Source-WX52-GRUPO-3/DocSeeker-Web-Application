@@ -14,16 +14,20 @@ import {PaymentComponent} from "./views/patients/payment/payment.component";
 import{MedicalHistoryComponent} from "./views/patients/medical-history/medical-history.component";
 import {ListPrescriptionComponent} from "./views/patients/list-prescription/list-prescription.component";
 import {PrescriptionComponent} from "./views/patients/prescription/prescription.component";
+import {ProfileComponent} from "./views/patients/profile/profile.component";
+import {EditProfileComponent} from "./views/patients/edit-profile/edit-profile.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'patientsLogIn', component: LogInComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'profile', component: ProfileComponent},
   { path: 'listDoctors', component: ListDoctorsComponent },
   { path: 'listNews', component: ListNewsComponent },
   { path: 'doctor/:id', component: DoctorProfileComponent },
   { path: 'news', component: ListNewsComponent },
   { path: 'prescriptions', component: ListPrescriptionComponent },
+  { path: 'editProfile', component: EditProfileComponent},
   { path: 'prescriptions/:id', component: PrescriptionComponent },
   { path: 'news/:id', component: MoreInfoNewsComponent },
   { path: 'reviewsDoctor/:id', component: DoctorReviewsComponent },
