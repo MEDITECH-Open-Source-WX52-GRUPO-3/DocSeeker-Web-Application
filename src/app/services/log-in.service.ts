@@ -1,15 +1,26 @@
 import { Injectable } from '@angular/core';
 import {Patient} from "../interfaces/patient";
+import {HttpClient} from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
 })
 export class LogInService {
   patients: Patient[] = [];
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   addPatient(patient: Patient){
     this.patients.push(patient);
+  }
+
+  registerPatient(patient: Patient){
+    const url = 'http://localhost:3000/patients';
+    return this.http.post(url, patient);
+  }
+
+  updatePatient(patient: Patient, id :any){
+    const url = `http://localhost:3000/patients/${id}`;
+    return this.http.put(url, patient);
   }
 
   getPatient(dni:string, password:string): Patient | undefined {

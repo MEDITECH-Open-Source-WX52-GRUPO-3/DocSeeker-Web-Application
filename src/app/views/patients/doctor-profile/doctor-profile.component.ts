@@ -21,8 +21,18 @@ export class DoctorProfileComponent implements OnInit{
   doctors: Array<any> = [];
   doctor: any;
   id="" ;
-  constructor(private route: ActivatedRoute, private breakpointObserver: BreakpointObserver, private newsSource: SourcesService, private router: Router) {}
+  selectedDate: Date
+  constructor(private route: ActivatedRoute, private breakpointObserver: BreakpointObserver, private newsSource: SourcesService, private router: Router) {
+    this.selectedDate = new Date();
+  }
 
+  navigateToAppointment() {
+    const year = this.selectedDate.getFullYear();
+    const month = this.selectedDate.getMonth() + 1;
+    const day = this.selectedDate.getDate();
+    const idDate = `${year}-${month < 10 ? '0' + month : month}-${day < 10 ? '0' + day : day}`;
+    this.router.navigate(['/dateAppointment', this.id, idDate]);
+  }
   ngOnInit() {
     this.id = this.route.snapshot.params['id'];
     this.newsSource.getSources('doctors').subscribe((data: any): void => {

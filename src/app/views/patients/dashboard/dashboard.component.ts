@@ -7,12 +7,12 @@ import {SourcesService} from "../../../services/sources.service";
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit{
-  currentPatient: any;
 
   @Input() indicators = true;
   selectedIndex= 0;
 
   news: Array<any> = [];
+  currentPatient: any;
 
   selectImage(index: number):void{
     this.selectedIndex = index;
@@ -20,9 +20,9 @@ export class DashboardComponent implements OnInit{
   constructor(private newsSource: SourcesService) {
   }
   ngOnInit() {
-    const currentPatient = localStorage.getItem('currentPatient');
-    if (currentPatient) {
-      this.currentPatient = JSON.parse(currentPatient);
+    this.currentPatient = localStorage.getItem('currentPatient');
+    if (this.currentPatient) {
+      this.currentPatient = JSON.parse(this.currentPatient);
     }
     console.log("User logged: ", this.currentPatient)
 

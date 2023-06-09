@@ -8,9 +8,9 @@
       <h1>Doctors</h1>
       <div *ngFor="let doctor of doctors">
         <app-doctor-card [routerLink]="['/doctor', doctor.id]"
-          [nameDoctor]="doctor.name"
-          [area]="doctor.area"
-          [price]="doctor.cost">
+                         [nameDoctor]="doctor.name"
+                         [area]="doctor.area"
+                         [price]="doctor.cost">
         </app-doctor-card>
       </div>
     </div>
