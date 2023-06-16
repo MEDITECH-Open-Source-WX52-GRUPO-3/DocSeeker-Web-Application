@@ -26,7 +26,7 @@ export class PopupComponent {
   }
   closePopup() {
     this.popupVisible = false;
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/dashboardDoctor']);
 
   }
 }
