@@ -1,0 +1,19 @@
+<mat-drawer-container>
+  <mat-drawer mode="side" opened="true">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div class="container">
+      <h1>My Patients</h1>
+      <div *ngFor="let date of dates">
+        <app-patient-date-card [routerLink]="['/', date.id]"
+                          [namePatient]="getNamePatient(date.idPatient)"
+                          [date]="date.date"
+                               [hour]="getHourDate(date.hourId)">
+        </app-patient-date-card>
+      </div>
+    </div>
+  </mat-drawer-content>
+
+</mat-drawer-container>
