@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import {Patient} from "../interfaces/patient";
 import {HttpClient} from "@angular/common/http";
+import {Doctor} from "../Interfaces/doctor";
+import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -16,6 +18,16 @@ export class LogInService {
   registerPatient(patient: Patient){
     const url = 'http://localhost:3000/patients';
     return this.http.post(url, patient);
+  }
+
+  registerDoctor(doctor: Doctor){
+    const url ='http://localhost:3000/doctors';
+    return this.http.post(url, doctor);
+  }
+
+  updateDoctor(doctor: Doctor, id :any){
+    const url = `http://localhost:3000/doctors/${id}`;
+    return this.http.put(url, doctor);
   }
 
   updatePatient(patient: Patient, id :any){

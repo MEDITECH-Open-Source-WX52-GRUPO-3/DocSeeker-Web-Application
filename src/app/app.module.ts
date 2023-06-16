@@ -52,6 +52,7 @@ import {MatSelectModule} from "@angular/material/select";
 import { ProfileComponent } from './views/patients/profile/profile.component';
 import { EditProfileComponent } from './views/patients/edit-profile/edit-profile.component';
 import {MatSnackBar} from "@angular/material/snack-bar";
+import { LogInDoctorComponent } from './views/doctors/log-in-doctor/log-in-doctor.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -83,6 +84,7 @@ import {MatSnackBar} from "@angular/material/snack-bar";
     PrescriptionComponent,
     ProfileComponent,
     EditProfileComponent,
+    LogInDoctorComponent,
   ],
   imports: [
     BrowserModule,

@@ -16,10 +16,12 @@ import {ListPrescriptionComponent} from "./views/patients/list-prescription/list
 import {PrescriptionComponent} from "./views/patients/prescription/prescription.component";
 import {ProfileComponent} from "./views/patients/profile/profile.component";
 import {EditProfileComponent} from "./views/patients/edit-profile/edit-profile.component";
+import {LogInDoctorComponent} from "./views/doctors/log-in-doctor/log-in-doctor.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'patientsLogIn', component: LogInComponent },
+  { path: 'doctorsLogIn', component: LogInDoctorComponent},
   { path: 'dashboard', component: DashboardComponent },
   { path: 'profile', component: ProfileComponent},
   { path: 'listDoctors', component: ListDoctorsComponent },

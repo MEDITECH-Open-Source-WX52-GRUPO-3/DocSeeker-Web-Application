@@ -99,6 +99,5 @@ export class LogInCardComponent implements OnInit{
       this.patients = data;
       console.log("Sources: ", this.patients);
     });
-
   }
 }
