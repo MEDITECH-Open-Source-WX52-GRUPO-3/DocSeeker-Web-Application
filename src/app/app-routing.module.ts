@@ -16,16 +16,16 @@ import {ListPrescriptionComponent} from "./views/patients/list-prescription/list
 import {PrescriptionComponent} from "./views/patients/prescription/prescription.component";
 import {ProfileComponent} from "./views/patients/profile/profile.component";
 import {EditProfileComponent} from "./views/patients/edit-profile/edit-profile.component";
+import {LogInDoctorComponent} from "./views/doctors/log-in-doctor/log-in-doctor.component";
 import {MedicalHistoryListComponent} from "./views/doctors/medical-history-list/medical-history-list.component";
-import {
-  MedicalHistoryPatientComponent
-} from "./views/doctors/medical-history-patient/medical-history-patient.component";
+import {MedicalHistoryPatientComponent} from "./views/doctors/medical-history-patient/medical-history-patient.component";
 import {AppointmentsComponent} from "./views/doctors/appointments/appointments.component";
 import {DashboardDoctorComponent} from "./views/doctors/dashboard-doctor/dashboard-doctor.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'patientsLogIn', component: LogInComponent },
+  { path: 'doctorsLogIn', component: LogInDoctorComponent},
   { path: 'dashboard', component: DashboardComponent },
   { path: 'profile', component: ProfileComponent},
   { path: 'listDoctors', component: ListDoctorsComponent },

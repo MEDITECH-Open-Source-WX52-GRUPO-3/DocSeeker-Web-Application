@@ -52,6 +52,7 @@ import {MatSelectModule} from "@angular/material/select";
 import { ProfileComponent } from './views/patients/profile/profile.component';
 import { EditProfileComponent } from './views/patients/edit-profile/edit-profile.component';
 import {MatSnackBar} from "@angular/material/snack-bar";
+import { LogInDoctorComponent } from './views/doctors/log-in-doctor/log-in-doctor.component';
 import { MedicalHistoryListComponent } from './views/doctors/medical-history-list/medical-history-list.component';
 import { PatientCardComponent } from './components/patient-card/patient-card.component';
 import { MedicalHistoryPatientComponent } from './views/doctors/medical-history-patient/medical-history-patient.component';
@@ -90,6 +91,7 @@ import { SidebarDoctorComponent } from './components/sidebar-doctor/sidebar-doct
     PrescriptionComponent,
     ProfileComponent,
     EditProfileComponent,
+    LogInDoctorComponent,
     MedicalHistoryListComponent,
     PatientCardComponent,
     MedicalHistoryPatientComponent,
