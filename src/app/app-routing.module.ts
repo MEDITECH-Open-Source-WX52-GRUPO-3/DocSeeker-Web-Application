@@ -16,6 +16,12 @@ import {ListPrescriptionComponent} from "./views/patients/list-prescription/list
 import {PrescriptionComponent} from "./views/patients/prescription/prescription.component";
 import {ProfileComponent} from "./views/patients/profile/profile.component";
 import {EditProfileComponent} from "./views/patients/edit-profile/edit-profile.component";
+import {MedicalHistoryListComponent} from "./views/doctors/medical-history-list/medical-history-list.component";
+import {
+  MedicalHistoryPatientComponent
+} from "./views/doctors/medical-history-patient/medical-history-patient.component";
+import {AppointmentsComponent} from "./views/doctors/appointments/appointments.component";
+import {DashboardDoctorComponent} from "./views/doctors/dashboard-doctor/dashboard-doctor.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -34,7 +40,14 @@ const routes: Routes = [
   { path: 'newReview/:id', component: NewReviewToDoctorComponent },
   { path: 'dateAppointment/:id/:idDate', component: DoctorDateComponent },
   { path: 'payment/:id/:idDate/:idHours', component: PaymentComponent },
-  { path: 'medicalHistory/:id', component: MedicalHistoryComponent }
+  { path: 'medicalHistory/:id', component: MedicalHistoryComponent },
+  { path: 'listPatientsMedicalHistory', component: MedicalHistoryListComponent },
+  { path: 'listPatientsMedicalHistory/:idPatient', component: MedicalHistoryPatientComponent },
+  { path: 'myAppointments', component: AppointmentsComponent },
+  { path: 'dashboardDoctor', component: DashboardDoctorComponent },
+
+
+
 
 
 ];

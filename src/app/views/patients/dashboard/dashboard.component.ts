@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {SourcesService} from "../../../services/sources.service";
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'app-dashboardDoctor',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })

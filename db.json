@@ -198,6 +198,17 @@
       "password": "123123",
       "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png",
       "id": 7
+    },
+    {
+      "dni": "98762342",
+      "name": "Kendall",
+      "gender": "male",
+      "birthday": "2001-03-27",
+      "email": "kendall@gmail.com",
+      "cellphone": "970783424",
+      "password": "123",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png",
+      "id": 7
     }
   ],
   "medicalInformation": [
@@ -669,7 +680,7 @@
     },
     {
       "id": 1,
-      "idPatient": 2,
+      "idPatient": 3,
       "doctorId": 0,
       "date": "2022-10-14",
       "hourId": 1
@@ -785,6 +796,27 @@
       "doctorId": 4,
       "date": "2023-05-25",
       "hourId": 3
+    },
+    {
+      "id": 18,
+      "idPatient": 0,
+      "doctorId": 1,
+      "date": "2023-06-09",
+      "hourId": 1
+    },
+    {
+      "id": 19,
+      "idPatient": 0,
+      "doctorId": 1,
+      "date": "2023-06-09",
+      "hourId": 1
+    },
+    {
+      "id": 20,
+      "idPatient": 0,
+      "doctorId": 0,
+      "date": "2023-06-09",
+      "hourId": 0
     }
   ],
   "prescriptions": [
