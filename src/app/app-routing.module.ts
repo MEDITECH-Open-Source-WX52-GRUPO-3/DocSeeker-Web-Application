@@ -46,7 +46,7 @@ const routes: Routes = [
   { path: 'listPatientsMedicalHistory/:idPatient', component: MedicalHistoryPatientComponent },
   { path: 'myAppointments', component: AppointmentsComponent },
   { path: 'dashboardDoctor', component: DashboardDoctorComponent },
-  { path: 'newMedicalHistory', component: NewMedicalHistoryComponent}
+  { path: 'newMedicalHistory/:id', component: NewMedicalHistoryComponent}
 
 
 

@@ -17,6 +17,8 @@ export class NewMedicalHistoryComponent {
     );
   patients: Array<any> = [];
   patient: any;
+  medicalHistories: Array<any> = [];
+  medicalHistory: any;
   id="" ;
   review: any;
 
@@ -24,13 +26,19 @@ export class NewMedicalHistoryComponent {
 
   ngOnInit() {
     this.id = this.route.snapshot.params['id'];
-    this.newsSource.getSources('patients').subscribe((data: any): void => {
-      this.patients = data;
-      this.patient = this.patients.find(patient => patient.id == this.id);
 
-      console.log("Sources: ", this.patient);
-      console.log("Sources: ", this.id);
+    this.newsSource.getSources('medicalHistory').subscribe((data: any): void => {
+      this.medicalHistories = data;
+      this.medicalHistory = this.medicalHistories.find(medicalHistory => medicalHistory.id == this.id);
+      console.log("Medical History: ", this.medicalHistory);
 
+      if (this.medicalHistory) {
+        this.newsSource.getSources('patients').subscribe((data: any): void => {
+          this.patients = data;
+          this.patient = this.patients.find(patient => patient.id == this.medicalHistory.idPatient);
+          console.log("Patient: ", this.patient);
+        });
+      }
     });
   }
 }
