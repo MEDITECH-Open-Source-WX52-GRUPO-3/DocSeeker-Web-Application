@@ -1,0 +1,42 @@
+<mat-drawer-container>
+  <mat-drawer mode="side" opened="true">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div class="wrapper">
+      <div class="title-container">
+        <button mat-fab class="return-button" color="basic" [routerLink]="[]">
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+        <h1>Add historical record for</h1>
+      </div>
+
+      <div class="information-container">
+        <div>
+          <h2>Check the historical data of </h2>
+          <mat-card>
+            <div class="row-container">
+              <div class="column-container1">
+                <h2>Date</h2>
+                <input type="text" placeholder="DD/MM/YYYY" />
+              </div>
+              <div class="column-container2">
+                <h2>Upload Documents</h2>
+                <input type="file" />
+              </div>
+            </div>
+            <div class="column-container3">
+              <h2>What was the appointment about</h2>
+              <textarea placeholder="Enter the appointment details" rows="4"></textarea>
+            </div>
+
+            <div class="publish-container">
+              <button mat-button class="publish-button" [routerLink]="[]">Save</button>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
