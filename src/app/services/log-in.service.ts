@@ -35,6 +35,7 @@ export class LogInService {
     return this.http.put(url, patient);
   }
 
+
   getPatient(dni:string, password:string): Patient | undefined {
     return this.patients.find(patient => patient.dni==dni && patient.password == password);
   }

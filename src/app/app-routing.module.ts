@@ -21,6 +21,8 @@ import {MedicalHistoryListComponent} from "./views/doctors/medical-history-list/
 import {MedicalHistoryPatientComponent} from "./views/doctors/medical-history-patient/medical-history-patient.component";
 import {AppointmentsComponent} from "./views/doctors/appointments/appointments.component";
 import {DashboardDoctorComponent} from "./views/doctors/dashboard-doctor/dashboard-doctor.component";
+import {ProfileDoctorComponent} from "./views/doctors/profile-doctor/profile-doctor.component";
+import {EditProfileDoctorComponent} from "./views/doctors/edit-profile-doctor/edit-profile-doctor.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -28,6 +30,8 @@ const routes: Routes = [
   { path: 'doctorsLogIn', component: LogInDoctorComponent},
   { path: 'dashboard', component: DashboardComponent },
   { path: 'profile', component: ProfileComponent},
+  { path: 'profileDoctor', component: ProfileDoctorComponent},
+  { path: 'editProfileDoctor', component: EditProfileDoctorComponent},
   { path: 'listDoctors', component: ListDoctorsComponent },
   { path: 'listNews', component: ListNewsComponent },
   { path: 'doctor/:id', component: DoctorProfileComponent },
