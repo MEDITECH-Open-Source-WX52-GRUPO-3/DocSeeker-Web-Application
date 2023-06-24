@@ -60,6 +60,7 @@ import { AppointmentsComponent } from './views/doctors/appointments/appointments
 import { PatientDateCardComponent } from './components/patient-date-card/patient-date-card.component';
 import { DashboardDoctorComponent } from './views/doctors/dashboard-doctor/dashboard-doctor.component';
 import { SidebarDoctorComponent } from './components/sidebar-doctor/sidebar-doctor.component';
+import { AppointmentsPatientsComponent } from './views/patients/appointments-patients/appointments-patients.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -99,6 +100,7 @@ import { SidebarDoctorComponent } from './components/sidebar-doctor/sidebar-doct
     PatientDateCardComponent,
     DashboardDoctorComponent,
     SidebarDoctorComponent,
+    AppointmentsPatientsComponent,
   ],
   imports: [
     BrowserModule,
