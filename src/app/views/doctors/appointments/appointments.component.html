@@ -5,9 +5,9 @@
 
   <mat-drawer-content>
     <div class="container">
-      <h1>My Patients</h1>
+      <h1>My Appointments</h1>
       <div *ngFor="let date of dates">
-        <app-patient-date-card [routerLink]="['/', date.id]"
+        <app-patient-date-card [routerLink]="['/appointmentsPatients', date.idPatient]"
                           [namePatient]="getNamePatient(date.idPatient)"
                           [date]="date.date"
                                [hour]="getHourDate(date.hourId)">

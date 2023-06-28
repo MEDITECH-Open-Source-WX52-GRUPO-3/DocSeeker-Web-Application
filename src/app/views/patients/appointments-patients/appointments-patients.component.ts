@@ -9,7 +9,6 @@ import { ActivatedRoute } from '@angular/router';
 export class AppointmentsPatientsComponent  implements OnInit {
   idPatient =""
   medicalInformation: any;
-  currentPatient: any;
   patient: any = {};
 
   constructor(
@@ -19,14 +18,18 @@ export class AppointmentsPatientsComponent  implements OnInit {
 
   ngOnInit() {
     this.idPatient = this.route.snapshot.params['id'];
-    this.currentPatient = localStorage.getItem('currentPatient');
-    if (this.currentPatient) {
-      this.currentPatient = JSON.parse(this.currentPatient);
-    }
+    this.sourcesService
+      .getSources('patients')
+      .subscribe((data: any) => {
+        this.patient = data.find((patient: any) => patient.id == this.idPatient);
+        console.log("Patient: ", this.patient);
+      });
+
+
     this.sourcesService
       .getSources('medicalInformation')
       .subscribe((data: any) => {
-        this.patient = data.find((patient: any) => patient.id.toString() === this.idPatient);
+        this.medicalInformation = data.find((patient: any) => patient.idPatient == this.idPatient);
         console.log("Patient: ", this.patient);
       });
   }
