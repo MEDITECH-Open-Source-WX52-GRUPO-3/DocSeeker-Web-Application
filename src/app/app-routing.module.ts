@@ -26,6 +26,8 @@ import {NewMedicalHistoryComponent} from "./views/doctors/new-medical-history/ne
 import {ProfileDoctorComponent} from "./views/doctors/profile-doctor/profile-doctor.component";
 import {EditProfileDoctorComponent} from "./views/doctors/edit-profile-doctor/edit-profile-doctor.component";
 import {MyReviewsComponent} from "./views/doctors/my-reviews/my-reviews.component";
+import {NewsDoctorsComponent} from "./views/doctors/news-doctors/news-doctors.component";
+import {NewsDoctorsDetailsComponent} from "./views/doctors/news-doctors-details/news-doctors-details.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -54,7 +56,11 @@ const routes: Routes = [
   { path: 'dashboardDoctor', component: DashboardDoctorComponent },
   { path: 'appointmentsPatients/:id', component: AppointmentsPatientsComponent },
   { path: 'newMedicalHistory/:id', component: NewMedicalHistoryComponent},
-  { path: 'myReviews', component: MyReviewsComponent}
+  { path: 'myReviews', component: MyReviewsComponent},
+  { path: 'listNewsDoctors', component: NewsDoctorsComponent},
+  { path: 'listNewsDoctors/:id', component: NewsDoctorsDetailsComponent }
+
+
 
 
 

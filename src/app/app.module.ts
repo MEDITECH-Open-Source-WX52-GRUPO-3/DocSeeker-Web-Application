@@ -65,6 +65,8 @@ import { NewMedicalHistoryComponent } from './views/doctors/new-medical-history/
 import { ProfileDoctorComponent } from './views/doctors/profile-doctor/profile-doctor.component';
 import { EditProfileDoctorComponent } from './views/doctors/edit-profile-doctor/edit-profile-doctor.component';
 import { MyReviewsComponent } from './views/doctors/my-reviews/my-reviews.component';
+import { NewsDoctorsComponent } from './views/doctors/news-doctors/news-doctors.component';
+import { NewsDoctorsDetailsComponent } from './views/doctors/news-doctors-details/news-doctors-details.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -109,6 +111,8 @@ import { MyReviewsComponent } from './views/doctors/my-reviews/my-reviews.compon
     ProfileDoctorComponent,
     EditProfileDoctorComponent,
     MyReviewsComponent,
+    NewsDoctorsComponent,
+    NewsDoctorsDetailsComponent,
   ],
   imports: [
     BrowserModule,
