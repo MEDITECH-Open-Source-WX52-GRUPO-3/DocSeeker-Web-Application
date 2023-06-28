@@ -47,12 +47,8 @@ mat-drawer-container {
 }
 
 .column-container1 {
-  margin-top: 1%;
-  margin-left: 15%;
-  margin-bottom: 1%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .column-container2 {
   margin-top: 1%;
@@ -65,16 +61,12 @@ mat-drawer-container {
 
 .column-container3 {
   margin-top: 1%;
-  margin-left: 5%;
   margin-bottom: 1%;
   display: flex;
   flex-direction: column;
 }
 
 .column-container3 textarea {
-  width: 93%;
-  max-width: 93%;
-  height: auto;
   resize: vertical;
   min-height: 150px;
 }
@@ -106,4 +98,5 @@ h1 {
 mat-card{
   background-color: #8dbfc7;
   border: #0093AB 4px;
+  padding: 1rem;
 }

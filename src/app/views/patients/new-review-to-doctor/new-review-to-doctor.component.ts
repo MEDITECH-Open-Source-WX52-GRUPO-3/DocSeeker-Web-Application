@@ -26,8 +26,10 @@ export class NewReviewToDoctorComponent implements OnInit{
   doctors: Array<any> = [];
   doctor: any;
   id="" ;
+  reviews: any;
   review: any;
-  selectedValue: any;
+  selectedValue= 5;
+  currentPatient: any;
 
   constructor(private route: ActivatedRoute, private breakpointObserver: BreakpointObserver, private newsSource: SourcesService, private router: Router) {}
 
@@ -41,9 +43,33 @@ export class NewReviewToDoctorComponent implements OnInit{
       console.log("Sources: ", this.id);
 
     });
+    this.newsSource.getSources('reviews').subscribe((data: any): void => {
+      this.reviews = data;
+      console.log("lenght: ", this.reviews.length);
+    });
+
+    this.currentPatient = localStorage.getItem('currentPatient');
+    if (this.currentPatient) {
+      this.currentPatient = JSON.parse(this.currentPatient);
+    }
+  }
+  publishReview(){
+    let review = {
+      "id": this.reviews.length,
+      "profilePhotoUrl": "../../src/assets/images/Camila Hernández image.jpg",
+      "customerName": this.currentPatient.name,
+      "customerReview": this.review,
+      "customerScore": this.selectedValue,
+      "idPatient": this.id,
+      "idDoctor": this.currentPatient.id
+    }
+    this.newsSource.postSources('reviews', review).subscribe((data: any): void => {
+      console.log("REVIEW POST new", data)
+    })
   }
 
-  ratingChanged($event: any) {
-
+  onRatingChange(event: number): void {
+    this.selectedValue = event;
+    console.log('Valor seleccionado:', this.selectedValue);
   }
 }

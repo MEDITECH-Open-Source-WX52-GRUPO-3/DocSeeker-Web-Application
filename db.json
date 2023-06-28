@@ -668,6 +668,15 @@
       "customerScore": 3,
       "idUser": 0,
       "idDoctor": 1
+    },
+    {
+      "id": 9,
+      "profilePhotoUrl": "../../src/assets/images/Camila Hernández image.jpg",
+      "customerName": "Martin Vizcarra",
+      "customerReview": "buen servicio",
+      "customerScore": 5,
+      "idPatient": "0",
+      "idDoctor": 0
     }
   ],
   "dates": [
@@ -1119,6 +1128,10 @@
           "id": 0,
           "date": "24/10/2022",
           "content": "Show evidence of headache"
+        },
+        {
+          "date": "2023-06-28",
+          "content": "PRESENTA DOLOR"
         }
       ]
     },

@@ -21,24 +21,59 @@ export class NewMedicalHistoryComponent {
   medicalHistory: any;
   id="" ;
   review: any;
+  selectedDate: Date;
+  description = "";
 
-  constructor(private route: ActivatedRoute, private breakpointObserver: BreakpointObserver, private newsSource: SourcesService, private router: Router) {}
+
+  constructor(private route: ActivatedRoute, private breakpointObserver: BreakpointObserver, private newsSource: SourcesService, private router: Router) {
+    this.selectedDate = new Date();
+  }
 
   ngOnInit() {
     this.id = this.route.snapshot.params['id'];
 
     this.newsSource.getSources('medicalHistory').subscribe((data: any): void => {
       this.medicalHistories = data;
-      this.medicalHistory = this.medicalHistories.find(medicalHistory => medicalHistory.id == this.id);
+      this.medicalHistory = this.medicalHistories.find(medicalHistory => medicalHistory.idPatient == this.id);
       console.log("Medical History: ", this.medicalHistory);
 
-      if (this.medicalHistory) {
-        this.newsSource.getSources('patients').subscribe((data: any): void => {
-          this.patients = data;
-          this.patient = this.patients.find(patient => patient.id == this.medicalHistory.idPatient);
-          console.log("Patient: ", this.patient);
-        });
-      }
+    this.newsSource.getSources('patients').subscribe((data: any): void => {
+      this.patients = data;
+      this.patient = this.patients.find(patient => patient.id == this.id);
+      console.log("Patient: ", this.patient);
     });
+    });
+  }
+  saveHistoricalRecord(){
+    const year = this.selectedDate.getFullYear();
+    const month = this.selectedDate.getMonth() + 1;
+    const day = this.selectedDate.getDate();
+    const idDate = `${year}/${month < 10 ? '0' + month : month}/${day < 10 ? '0' + day : day}`;
+    if(this.medicalHistory){
+      let newHistory = {
+        "date": idDate,
+        "content": this.description
+      }
+      this.medicalHistory["historial"].push(newHistory)
+      this.newsSource.updateSources('medicalHistory', this.medicalHistory.id, this.medicalHistory).subscribe((data: any): void => {
+        console.log("Medical HIstory PUT", data)
+      })
+    }
+    else{
+      let newHistory = {
+        "id": this.medicalHistories.length,
+        "idPatient": this.id,
+        "historial": [
+          {
+            "id": 0,
+            "date": idDate,
+            "content": this.description
+          }
+        ]
+      }
+      this.newsSource.postSources('medicalHistory', newHistory).subscribe((data: any): void => {
+        console.log("Medical HIstory POST new", data)
+      })
+    }
   }
 }

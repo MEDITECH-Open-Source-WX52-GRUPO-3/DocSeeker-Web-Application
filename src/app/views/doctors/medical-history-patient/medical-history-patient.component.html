@@ -28,7 +28,7 @@
           <mat-icon>mail</mat-icon> {{ currentPatient.email}}
         </a>
       </div>
-      <div class="buttonContainer">
+      <div class="buttonContainer" [routerLink]="['/newMedicalHistory', currentPatient.id]">
         <a>
           <mat-icon>add</mat-icon> Add medical record
         </a>
