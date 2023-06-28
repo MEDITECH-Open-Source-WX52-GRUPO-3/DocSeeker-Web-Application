@@ -87,7 +87,7 @@ export class LogInCardComponent implements OnInit{
       this.snackBar.open('Login Succesfull','',{duration:1000})
       console.log(patientFound)
       localStorage.setItem('currentPatient', JSON.stringify(patientFound));
-      this.router.navigate(['/dashboardDoctor'])
+      this.router.navigate(['/dashboard'])
     }
     else{
       this.snackBar.open('Login Failed','',{duration:1000})

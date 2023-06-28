@@ -21,4 +21,7 @@ export class SourcesService {
   postSources(endpoint: string, newObject: any): Observable<Object>{
     return this.http.post(`http://localhost:3000/${endpoint}`, newObject)
   }
+  updateSources(endpoint: string, id: any, newObject: any): Observable<Object>{
+    return this.http.put(`http://localhost:3000/${endpoint}/${id}`, newObject)
+  }
 }
