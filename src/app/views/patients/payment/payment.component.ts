@@ -4,6 +4,7 @@ import {BreakpointObserver, Breakpoints} from "@angular/cdk/layout";
 import {ActivatedRoute, Router} from "@angular/router";
 import {SourcesService} from "../../../services/sources.service";
 import {SaveAppointmentService} from "../../../services/save-appointment.service";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-payment',
@@ -17,7 +18,7 @@ export class PaymentComponent implements OnInit{
       map(result => result.matches),
       shareReplay()
     );
-
+  signInForm: FormGroup;
   dates: Array<any> = [];
   doctors: Array<any> = [];
   doctor: any;
@@ -27,10 +28,33 @@ export class PaymentComponent implements OnInit{
   newAppointment: any;
   private agregarObjetoSubscription: Subscription;
 
-  constructor(private interactionService: SaveAppointmentService, private route: ActivatedRoute, private breakpointObserver: BreakpointObserver, private newsSource: SourcesService, private router: Router) {
+  constructor(private interactionService: SaveAppointmentService, private route: ActivatedRoute, private breakpointObserver: BreakpointObserver,
+              private newsSource: SourcesService, private router: Router, public builder:FormBuilder) {
     this.agregarObjetoSubscription = this.interactionService.addAppointment$.subscribe(() => {
       this.addAppointment();
     });
+    this.signInForm = this.builder.group({
+      cardholder: ['',[Validators.required, Validators.minLength(8)]],
+      cardnumber: ['', [Validators.required, Validators.minLength(8)]],
+      expirationdate: ['',[Validators.required]],
+      cvv: ['',[Validators.required], Validators.maxLength(3), Validators.minLength(3)],
+    })
+  }
+
+  get cardholder(){
+    return this.signInForm.controls['cardholder'];
+  }
+
+  get cardnumber(){
+    return this.signInForm.controls['cardnumber'];
+  }
+
+  get expirationdate(){
+    return this.signInForm.controls['expirationdate'];
+  }
+
+  get cvv(){
+    return this.signInForm.controls['cvv'];
   }
 
   ngOnInit() {

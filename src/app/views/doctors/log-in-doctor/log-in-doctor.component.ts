@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Doctor} from "../../../Interfaces/doctor";
+import {Doctor} from "../../../interfaces/doctor";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {BreakpointObserver} from "@angular/cdk/layout";
 import {SourcesService} from "../../../services/sources.service";

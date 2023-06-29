@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {Patient} from "../interfaces/patient";
 import {HttpClient} from "@angular/common/http";
-import {Doctor} from "../Interfaces/doctor";
+import {Doctor} from "../interfaces/doctor";
 import {Observable} from "rxjs";
 
 @Injectable({

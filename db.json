@@ -826,6 +826,20 @@
       "doctorId": 0,
       "date": "2023-06-09",
       "hourId": 0
+    },
+    {
+      "id": 21,
+      "idPatient": 0,
+      "doctorId": 0,
+      "date": "2023-06-29",
+      "hourId": 0
+    },
+    {
+      "id": 22,
+      "idPatient": 0,
+      "doctorId": 0,
+      "date": "2023-06-29",
+      "hourId": 0
     }
   ],
   "prescriptions": [

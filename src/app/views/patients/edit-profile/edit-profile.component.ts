@@ -53,6 +53,9 @@ export class EditProfileComponent implements OnInit {
 
   }
 
+  get birthday() {
+    return this.signInForm.controls['birthday'];
+  }
   get name() {
     return this.signInForm.controls['name'];
   }

@@ -35,7 +35,7 @@
               <mat-error *ngIf="area.errors?.['required']">
                 Area is required
               </mat-error>
-              <mat-icon matSuffix>person</mat-icon>
+              <mat-icon matSuffix>monitor_heart</mat-icon>
             </mat-form-field>
 
             <mat-form-field class="example-mid-width">
@@ -44,35 +44,17 @@
               <mat-error *ngIf="cost.errors?.['required']">
                 Cost is required
               </mat-error>
-              <mat-icon matSuffix>call</mat-icon>
+              <mat-icon matSuffix>money</mat-icon>
             </mat-form-field>
+
 
             <mat-form-field class="example-mid-width-confirm">
-              <mat-label>Email</mat-label>
-              <input type="email" matInput placeholder="Email" value="" [(ngModel)]="currentDoctor.email" required/>
-              <mat-error *ngIf="email.errors?.['required']">
-                Email is required
-              </mat-error>
-              <mat-icon matSuffix>mail</mat-icon>
-            </mat-form-field>
-
-
-            <mat-form-field class="example-mid-width">
               <mat-label>Years</mat-label>
               <input type="number" matInput placeholder="Years" value="" [(ngModel)]="currentDoctor.years" required/>
               <mat-error *ngIf="years.errors?.['required']">
                 Years is required
               </mat-error>
-              <mat-icon matSuffix>call</mat-icon>
-            </mat-form-field>
-
-            <mat-form-field class="example-mid-width-confirm">
-              <mat-label>Education</mat-label>
-              <input type="education" matInput placeholder="Education" value="" [(ngModel)]="currentDoctor.education" required/>
-              <mat-error *ngIf="education.errors?.['required']">
-                Education is required
-              </mat-error>
-              <mat-icon matSuffix>mail</mat-icon>
+              <mat-icon matSuffix>face</mat-icon>
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
