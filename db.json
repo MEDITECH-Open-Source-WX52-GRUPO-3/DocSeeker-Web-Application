@@ -162,10 +162,7 @@
       "id": 5,
       "dni": "74717985",
       "name": "Edgar Alexander Malca  Rojas",
-      "genre": {
-        "name": "Male",
-        "code": "M"
-      },
+      "genre": "Male",
       "birthday": "2022-10-30T05:00:00.000Z",
       "email": "alexmrojas22@gmail.com",
       "cell1": "96429990",
@@ -177,10 +174,7 @@
       "id": 6,
       "dni": "70658893",
       "name": "Luis Pineda Ugas",
-      "genre": {
-        "name": "Male",
-        "code": "M"
-      },
+      "genre": "Male",
       "birthday": "2022-10-11T05:00:00.000Z",
       "email": "luispineda@gmail.com",
       "cell1": "789456123",
@@ -191,11 +185,22 @@
     {
       "dni": "123",
       "name": "jonatan",
-      "gender": "male",
+      "gender": "Male",
       "birthday": "1999-12-12",
       "email": "jona@gmail.com",
       "cellphone": "123123",
       "password": "123123",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png",
+      "id": 7
+    },
+    {
+      "dni": "98762342",
+      "name": "Kendall",
+      "gender": "Male",
+      "birthday": "2001-03-27",
+      "email": "kendall@gmail.com",
+      "cellphone": "970783424",
+      "password": "123",
       "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/2048px-Emblem-person-blue.svg.png",
       "id": 7
     }
@@ -379,28 +384,23 @@
       "hoursAvailable": [
         {
           "id": 0,
-          "hours": "9:00 AM - 10:00 AM",
-          "booked": true
+          "hours": "9:00 AM - 10:00 AM"
         },
         {
           "id": 1,
-          "hours": "12:00 PM - 14:00 PM",
-          "booked": false
+          "hours": "12:00 PM - 14:00 PM"
         },
         {
           "id": 2,
-          "hours": "15:30 PM - 17:00 PM",
-          "booked": false
+          "hours": "15:30 PM - 17:00 PM"
         },
         {
           "id": 3,
-          "hours": "17:00 PM - 18:30 PM",
-          "booked": false
+          "hours": "17:00 PM - 18:30 PM"
         },
         {
           "id": 4,
-          "hours": "20:00 PM - 21:00 PM",
-          "booked": false
+          "hours": "20:00 PM - 21:00 PM"
         }
       ]
     },
@@ -429,13 +429,11 @@
       "hoursAvailable": [
         {
           "id": 0,
-          "hours": "13:00 PM - 16:00 PM",
-          "booked": false
+          "hours": "13:00 PM - 16:00 PM"
         },
         {
           "id": 1,
-          "hours": "18:00 PM - 20:00 PM",
-          "booked": false
+          "hours": "18:00 PM - 20:00 PM"
         }
       ]
     },
@@ -460,33 +458,27 @@
       "hoursAvailable": [
         {
           "id": 0,
-          "hours": "9:00 AM - 10:00 AM",
-          "booked": true
+          "hours": "9:00 AM - 10:00 AM"
         },
         {
           "id": 1,
-          "hours": "12:00 PM - 14:00 PM",
-          "booked": false
+          "hours": "12:00 PM - 14:00 PM"
         },
         {
           "id": 2,
-          "hours": "15:30 PM - 17:00 PM",
-          "booked": false
+          "hours": "15:30 PM - 17:00 PM"
         },
         {
           "id": 3,
-          "hours": "17:00 PM - 18:30 PM",
-          "booked": false
+          "hours": "17:00 PM - 18:30 PM"
         },
         {
           "id": 4,
-          "hours": "20:00 PM - 21:00 PM",
-          "booked": false
+          "hours": "20:00 PM - 21:00 PM"
         },
         {
           "id": 5,
-          "hours": "21:00 PM - 23:00 PM",
-          "booked": false
+          "hours": "21:00 PM - 23:00 PM"
         }
       ]
     },
@@ -515,18 +507,15 @@
       "hoursAvailable": [
         {
           "id": 0,
-          "hours": "9:00 AM - 10:00 AM",
-          "booked": false
+          "hours": "9:00 AM - 10:00 AM"
         },
         {
           "id": 1,
-          "hours": "17:00 PM - 18:30 PM",
-          "booked": false
+          "hours": "17:00 PM - 18:30 PM"
         },
         {
           "id": 2,
-          "hours": "20:00 PM - 21:00 PM",
-          "booked": false
+          "hours": "20:00 PM - 21:00 PM"
         }
       ]
     },
@@ -555,23 +544,19 @@
       "hoursAvailable": [
         {
           "id": 0,
-          "hours": "06:00 AM - 08:00 AM",
-          "booked": false
+          "hours": "06:00 AM - 08:00 AM"
         },
         {
           "id": 1,
-          "hours": "12:00 PM - 13:00 PM",
-          "booked": false
+          "hours": "12:00 PM - 13:00 PM"
         },
         {
           "id": 2,
-          "hours": "14:30 PM - 15:00 PM",
-          "booked": false
+          "hours": "14:30 PM - 15:00 PM"
         },
         {
           "id": 3,
-          "hours": "18:00 PM - 20:30 PM",
-          "booked": false
+          "hours": "18:00 PM - 20:30 PM"
         }
       ]
     }
@@ -657,6 +642,15 @@
       "customerScore": 3,
       "idUser": 0,
       "idDoctor": 1
+    },
+    {
+      "id": 9,
+      "profilePhotoUrl": "../../src/assets/images/Camila Hernández image.jpg",
+      "customerName": "Martin Vizcarra",
+      "customerReview": "buen servicio",
+      "customerScore": 5,
+      "idPatient": "0",
+      "idDoctor": 0
     }
   ],
   "dates": [
@@ -669,7 +663,7 @@
     },
     {
       "id": 1,
-      "idPatient": 2,
+      "idPatient": 3,
       "doctorId": 0,
       "date": "2022-10-14",
       "hourId": 1
@@ -785,6 +779,41 @@
       "doctorId": 4,
       "date": "2023-05-25",
       "hourId": 3
+    },
+    {
+      "id": 18,
+      "idPatient": 0,
+      "doctorId": 1,
+      "date": "2023-06-09",
+      "hourId": 1
+    },
+    {
+      "id": 19,
+      "idPatient": 0,
+      "doctorId": 1,
+      "date": "2023-06-09",
+      "hourId": 1
+    },
+    {
+      "id": 20,
+      "idPatient": 0,
+      "doctorId": 0,
+      "date": "2023-06-09",
+      "hourId": 0
+    },
+    {
+      "id": 21,
+      "idPatient": 0,
+      "doctorId": 0,
+      "date": "2023-06-29",
+      "hourId": 0
+    },
+    {
+      "id": 22,
+      "idPatient": 0,
+      "doctorId": 0,
+      "date": "2023-06-29",
+      "hourId": 0
     }
   ],
   "prescriptions": [
@@ -1087,6 +1116,10 @@
           "id": 0,
           "date": "24/10/2022",
           "content": "Show evidence of headache"
+        },
+        {
+          "date": "2023-06-28",
+          "content": "PRESENTA DOLOR"
         }
       ]
     },

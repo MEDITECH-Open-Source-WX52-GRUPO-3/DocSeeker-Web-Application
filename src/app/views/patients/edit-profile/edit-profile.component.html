@@ -32,7 +32,7 @@
               <mat-form-field class="example-mid-width-confirm">
                 <mat-label>Birthday</mat-label>
                 <input type="date" matInput placeholder="Birthday" value="" [(ngModel)]="currentPatient.birthday" required/>
-                <mat-error *ngIf="signInForm.controls['birthday'].errors?.['required']">
+                <mat-error *ngIf="birthday.errors?.['required']">
                   Birthday is required
                 </mat-error>
                 <mat-icon matSuffix>calendar_today</mat-icon>
@@ -40,7 +40,7 @@
 
               <mat-form-field class="example-mid-width">
                 <mat-label>Cellphone</mat-label>
-                <input type="tel" matInput placeholder="Cellphone" value="" [(ngModel)]="currentPatient.cellphone" required/>
+                <input type="tel" matInput placeholder="Cellphone" value="" [(ngModel)]="currentPatient.cell1" required/>
                 <mat-error *ngIf="cellphone.errors?.['required']">
                   Cellphone is required
                 </mat-error>

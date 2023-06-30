@@ -52,6 +52,21 @@ import {MatSelectModule} from "@angular/material/select";
 import { ProfileComponent } from './views/patients/profile/profile.component';
 import { EditProfileComponent } from './views/patients/edit-profile/edit-profile.component';
 import {MatSnackBar} from "@angular/material/snack-bar";
+import { LogInDoctorComponent } from './views/doctors/log-in-doctor/log-in-doctor.component';
+import { MedicalHistoryListComponent } from './views/doctors/medical-history-list/medical-history-list.component';
+import { PatientCardComponent } from './components/patient-card/patient-card.component';
+import { MedicalHistoryPatientComponent } from './views/doctors/medical-history-patient/medical-history-patient.component';
+import { AppointmentsComponent } from './views/doctors/appointments/appointments.component';
+import { PatientDateCardComponent } from './components/patient-date-card/patient-date-card.component';
+import { DashboardDoctorComponent } from './views/doctors/dashboard-doctor/dashboard-doctor.component';
+import { SidebarDoctorComponent } from './components/sidebar-doctor/sidebar-doctor.component';
+import { AppointmentsPatientsComponent } from './views/patients/appointments-patients/appointments-patients.component';
+import { NewMedicalHistoryComponent } from './views/doctors/new-medical-history/new-medical-history.component';
+import { ProfileDoctorComponent } from './views/doctors/profile-doctor/profile-doctor.component';
+import { EditProfileDoctorComponent } from './views/doctors/edit-profile-doctor/edit-profile-doctor.component';
+import { MyReviewsComponent } from './views/doctors/my-reviews/my-reviews.component';
+import { NewsDoctorsComponent } from './views/doctors/news-doctors/news-doctors.component';
+import { NewsDoctorsDetailsComponent } from './views/doctors/news-doctors-details/news-doctors-details.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -83,6 +98,21 @@ import {MatSnackBar} from "@angular/material/snack-bar";
     PrescriptionComponent,
     ProfileComponent,
     EditProfileComponent,
+    LogInDoctorComponent,
+    MedicalHistoryListComponent,
+    PatientCardComponent,
+    MedicalHistoryPatientComponent,
+    AppointmentsComponent,
+    PatientDateCardComponent,
+    DashboardDoctorComponent,
+    SidebarDoctorComponent,
+    AppointmentsPatientsComponent,
+    NewMedicalHistoryComponent,
+    ProfileDoctorComponent,
+    EditProfileDoctorComponent,
+    MyReviewsComponent,
+    NewsDoctorsComponent,
+    NewsDoctorsDetailsComponent,
   ],
   imports: [
     BrowserModule,

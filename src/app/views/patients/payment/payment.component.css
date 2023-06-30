@@ -70,3 +70,15 @@ button.mat-button {
   margin-bottom: 1px;
 }
 
+.example-full-width {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  height: 15%;
+}
+
+.example-full-width mat-label,
+.example-full-width input {
+  margin-left: 0;
+  height: 100%;
+}
