@@ -162,10 +162,7 @@
       "id": 5,
       "dni": "74717985",
       "name": "Edgar Alexander Malca  Rojas",
-      "genre": {
-        "name": "Male",
-        "code": "M"
-      },
+      "genre": "Male",
       "birthday": "2022-10-30T05:00:00.000Z",
       "email": "alexmrojas22@gmail.com",
       "cell1": "96429990",
@@ -177,10 +174,7 @@
       "id": 6,
       "dni": "70658893",
       "name": "Luis Pineda Ugas",
-      "genre": {
-        "name": "Male",
-        "code": "M"
-      },
+      "genre": "Male",
       "birthday": "2022-10-11T05:00:00.000Z",
       "email": "luispineda@gmail.com",
       "cell1": "789456123",
@@ -191,7 +185,7 @@
     {
       "dni": "123",
       "name": "jonatan",
-      "gender": "male",
+      "gender": "Male",
       "birthday": "1999-12-12",
       "email": "jona@gmail.com",
       "cellphone": "123123",
@@ -202,7 +196,7 @@
     {
       "dni": "98762342",
       "name": "Kendall",
-      "gender": "male",
+      "gender": "Male",
       "birthday": "2001-03-27",
       "email": "kendall@gmail.com",
       "cellphone": "970783424",
@@ -390,28 +384,23 @@
       "hoursAvailable": [
         {
           "id": 0,
-          "hours": "9:00 AM - 10:00 AM",
-          "booked": true
+          "hours": "9:00 AM - 10:00 AM"
         },
         {
           "id": 1,
-          "hours": "12:00 PM - 14:00 PM",
-          "booked": false
+          "hours": "12:00 PM - 14:00 PM"
         },
         {
           "id": 2,
-          "hours": "15:30 PM - 17:00 PM",
-          "booked": false
+          "hours": "15:30 PM - 17:00 PM"
         },
         {
           "id": 3,
-          "hours": "17:00 PM - 18:30 PM",
-          "booked": false
+          "hours": "17:00 PM - 18:30 PM"
         },
         {
           "id": 4,
-          "hours": "20:00 PM - 21:00 PM",
-          "booked": false
+          "hours": "20:00 PM - 21:00 PM"
         }
       ]
     },
@@ -440,13 +429,11 @@
       "hoursAvailable": [
         {
           "id": 0,
-          "hours": "13:00 PM - 16:00 PM",
-          "booked": false
+          "hours": "13:00 PM - 16:00 PM"
         },
         {
           "id": 1,
-          "hours": "18:00 PM - 20:00 PM",
-          "booked": false
+          "hours": "18:00 PM - 20:00 PM"
         }
       ]
     },
@@ -471,33 +458,27 @@
       "hoursAvailable": [
         {
           "id": 0,
-          "hours": "9:00 AM - 10:00 AM",
-          "booked": true
+          "hours": "9:00 AM - 10:00 AM"
         },
         {
           "id": 1,
-          "hours": "12:00 PM - 14:00 PM",
-          "booked": false
+          "hours": "12:00 PM - 14:00 PM"
         },
         {
           "id": 2,
-          "hours": "15:30 PM - 17:00 PM",
-          "booked": false
+          "hours": "15:30 PM - 17:00 PM"
         },
         {
           "id": 3,
-          "hours": "17:00 PM - 18:30 PM",
-          "booked": false
+          "hours": "17:00 PM - 18:30 PM"
         },
         {
           "id": 4,
-          "hours": "20:00 PM - 21:00 PM",
-          "booked": false
+          "hours": "20:00 PM - 21:00 PM"
         },
         {
           "id": 5,
-          "hours": "21:00 PM - 23:00 PM",
-          "booked": false
+          "hours": "21:00 PM - 23:00 PM"
         }
       ]
     },
@@ -526,18 +507,15 @@
       "hoursAvailable": [
         {
           "id": 0,
-          "hours": "9:00 AM - 10:00 AM",
-          "booked": false
+          "hours": "9:00 AM - 10:00 AM"
         },
         {
           "id": 1,
-          "hours": "17:00 PM - 18:30 PM",
-          "booked": false
+          "hours": "17:00 PM - 18:30 PM"
         },
         {
           "id": 2,
-          "hours": "20:00 PM - 21:00 PM",
-          "booked": false
+          "hours": "20:00 PM - 21:00 PM"
         }
       ]
     },
@@ -566,23 +544,19 @@
       "hoursAvailable": [
         {
           "id": 0,
-          "hours": "06:00 AM - 08:00 AM",
-          "booked": false
+          "hours": "06:00 AM - 08:00 AM"
         },
         {
           "id": 1,
-          "hours": "12:00 PM - 13:00 PM",
-          "booked": false
+          "hours": "12:00 PM - 13:00 PM"
         },
         {
           "id": 2,
-          "hours": "14:30 PM - 15:00 PM",
-          "booked": false
+          "hours": "14:30 PM - 15:00 PM"
         },
         {
           "id": 3,
-          "hours": "18:00 PM - 20:30 PM",
-          "booked": false
+          "hours": "18:00 PM - 20:30 PM"
         }
       ]
     }

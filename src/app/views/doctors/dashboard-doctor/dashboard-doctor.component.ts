@@ -24,56 +24,7 @@ export class DashboardDoctorComponent implements OnInit{
     if (this.currentDoctor) {
       this.currentDoctor = JSON.parse(this.currentDoctor);
     }
-    this.currentDoctor = {
-      "id": 0,
-      "dni": "9873641",
-      "password": "doctorbest",
-      "name": "Jose Miguel",
-      "area": "Dentist",
-      "description": "A responsible doctor who always tries to help those who need it.",
-      "patients": 345,
-      "years": 25,
-      "age": 54,
-      "cost": 70.23,
-      "photo": "https://www.browardhealth.org/-/media/broward-health/placeholder/doctor-placeholder-male.jpg",
-      "education": [
-        {
-          "id": 0,
-          "name": "PUCP"
-        },
-        {
-          "id": 1,
-          "name": "UPC"
-        }
-      ],
-      "hoursAvailable": [
-        {
-          "id": 0,
-          "hours": "9:00 AM - 10:00 AM",
-          "booked": true
-        },
-        {
-          "id": 1,
-          "hours": "12:00 PM - 14:00 PM",
-          "booked": false
-        },
-        {
-          "id": 2,
-          "hours": "15:30 PM - 17:00 PM",
-          "booked": false
-        },
-        {
-          "id": 3,
-          "hours": "17:00 PM - 18:30 PM",
-          "booked": false
-        },
-        {
-          "id": 4,
-          "hours": "20:00 PM - 21:00 PM",
-          "booked": false
-        }
-      ]
-    }
+
     console.log("User logged: ", this.currentDoctor)
 
     this.newsSource.getSources('news').subscribe((data:any):void=>{
