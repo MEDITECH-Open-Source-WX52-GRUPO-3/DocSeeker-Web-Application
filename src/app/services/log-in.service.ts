@@ -36,7 +36,7 @@ export class LogInService {
   }
 
   updatePatient(patient: Patient, id :any){
-    const url = `http://localhost:8081/patients/${id}`;
+    const url = `http://localhost:8081/api/v1/patients/${id}`;
     return this.http.put(url, patient);
   }
 
